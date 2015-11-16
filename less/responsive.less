@@ -1,54 +1,6 @@
-@media all and (max-width: 1040px) {
+@media all and (max-width: 1050px) {
 
-	.contain-all {
-	
-		width: 90%;
-		
-		.left-rail {
-		
-			margin: 0 auto;
-			float: none;
-		
-		}
-		
-		.right-rail {
-		
-			float: none;
-			clear: both;
-			width: 640px;
-			margin: 60px auto 0px auto;
-		
-		}
-		
-	&.buffer {
-	
-			text-align: center;
-			margin-top: 50px;
-	
-		.hang {
-	
-		display: none;
-	
-	}
-	
-		#header-ad {
-		
-			float: none;
-
-		
-		}
-	
-	}
-	
-	&.main {
-	
-		margin-top: 20px;
-	
-	}
-	
-	}
-	
-	header nav.main ul li {
+header nav.main ul li {
 	
 		&:last-child {
 		
@@ -101,6 +53,59 @@
 		}
 	
 	}
+
+}
+
+@media all and (max-width: 1000px) {
+
+	.contain-all {
+	
+		
+		.left-rail {
+		
+			margin: 0 auto;
+			float: none;
+			width: 100%;
+		
+		}
+		
+		.right-rail {
+		
+			float: none;
+			clear: both;
+			width: 640px;
+			margin: 60px auto 0px auto;
+		
+		}
+		
+	&.buffer {
+	
+			text-align: center;
+			margin-top: 50px;
+	
+		.hang {
+	
+		display: none;
+	
+	}
+	
+		#header-ad {
+		
+			float: none;
+
+		
+		}
+	
+	}
+	
+	&.main {
+	
+		margin-top: 20px;
+	
+	}
+	
+	}
+	
 	
 	header .search-form {
 	
@@ -275,10 +280,11 @@
 		}
 	
 	
-	.contain-all .left-rail p.featured {
+	.contain-all .left-rail .post p.featured {
 	
 		width: 113%;
 		margin-left: -6%;
+		max-width: inherit;
 	
 	}
 

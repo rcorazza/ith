@@ -1,5 +1,5 @@
-	<div class="right-rail">
-	
+	<section class="right-rail">
+		<div class="inner">
 			<?php 
 				
 				if (is_home('') ) {
@@ -72,4 +72,5 @@
 			<div>
 				<img src="/wp-content/themes/stemler/assets/img/sidebar-long.jpg">
 			</div>
-	</div>
+		</div>
+	</section>	
