@@ -16,6 +16,7 @@
 		?>  
 			
 			<div class="left-rail">
+				<div class="inner">
 				<?php if (have_posts()) : ?>
 				<?php while (have_posts()) : the_post(); ?>
 				
@@ -111,10 +112,22 @@
 				</div>
 				<?php endwhile; ?>
 				<?php endif; ?>
+				<div class="bottom">
+				<?php	
+						if (is_mobile() || is_tablet() ) {
+							dynamic_sidebar('recruit'); 
+							dynamic_sidebar('latest');
+						}
+						else {
+						
+						}	
+					?>
+				</div>	
 				<div class="post comments">
 						<?php comments_template(''); ?>
 						<?php dynamic_sidebar('double ad'); ?>
 				</div>
+			</div>
 			</div>
 		<?php get_sidebar(); ?>
 	</div>

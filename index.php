@@ -8,9 +8,25 @@
 					<?php endif; ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part( 'main-post' ); ?>	          
-					<?php if( $wp_query->current_post == 0 ) { ?>
-					<?php dynamic_sidebar('forum teaser'); ?>
-					<?php } ?>
+					<?php if( $wp_query->current_post == 0 ) { 
+							if( is_mobile() || is_tablet() ) { 
+							dynamic_sidebar('top content'); 
+					 } 
+					 else if ( !is_mobile() || !is_tablet() ) { 
+					 dynamic_sidebar('forum teaser'); 
+					}
+					else { 
+					
+					 } 
+					 } ?>          
+					<?php if( $wp_query->current_post == 1) { 
+							if( is_mobile() || is_tablet() ) { 
+							dynamic_sidebar('forum teaser'); 
+					 } 
+					else { 
+					
+					 } 
+					 } ?>
 					<?php if( $wp_query->current_post == 2 ) { ?>
 					<?php dynamic_sidebar('double ad'); ?> 
 					<?php } ?>

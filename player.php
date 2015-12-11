@@ -3,6 +3,7 @@
 			<section>
 				<div class="main single player contain-all">
 					<div class="left-rail">
+						<div class="inner">
 						<?php if (have_posts()) : ?>
 						<?php while (have_posts()) : the_post(); ?>
 						<div class="post">
@@ -73,10 +74,23 @@
 					
 					<?php endwhile; ?>
 					<?php endif; ?>
+					
+					<div class="bottom">
+					<?php	
+						if (is_mobile() || is_tablet() ) {
+							dynamic_sidebar('roster'); 
+							dynamic_sidebar('latest');
+						}
+						else {
+						
+						}	
+					?>
+					</div>
 	
 					<div class="post comments">
 						<?php comments_template(''); ?>
 						<?php dynamic_sidebar('double ad'); ?>
+					</div>
 					</div>
 				</div>
 			<?php get_sidebar(); ?>

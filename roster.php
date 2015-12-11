@@ -1,25 +1,33 @@
-<?php /* Template Name: Roster  */ get_header(); ?>
-
-	
-			<div class="single main roster contain-all">
-				<div class="left-rail">
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<div class="post">
-							<div class="top-of-post">
-							</div>
+		<?php /* Template Name: Roster  */ get_header(); ?>
+			<section class="single main roster contain-all">
+				<section class="left-rail">
+					<div class="inner">
+						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+						<article class="post">
 							<h2><?php the_title(); ?></h2>
 							<div style="clear: both;"></div>
 							<?php the_content(); ?> 
+						</article>
+						<?php endwhile; else: ?>
+						<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+						<?php endif; ?>
+						<div class="bottom">
+						<?php	
+						if (is_mobile() || is_tablet() ) {
+							dynamic_sidebar('roster'); 
+							dynamic_sidebar('latest');
+						}
+						else {
+						
+						}	
+					?>
+					</div>
+						<div class="post comments">
+							<?php comments_template(''); ?>
 						</div>
-					<?php endwhile; else: ?>
-					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-					<?php endif; ?>
-
-					<div class="post comments">
-						<?php comments_template(''); ?>
 						<?php dynamic_sidebar('double ad'); ?>
 					</div>
-				</div>
+				</section>
 				<?php get_sidebar(); ?>
-			</div>
+			</section>
 		<?php get_footer(); ?>

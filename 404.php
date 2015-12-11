@@ -18,6 +18,13 @@ get_header(); ?>
 					<?php endwhile; else: ?>
 					<p><?php _e('Sorry, there\'s nothing here. Go back <a href="/">home</a>.'); ?></p>
 					<?php endif; ?>
+						
+						<?php	
+							if (is_mobile() || is_tablet()) {
+							dynamic_sidebar('forum teaser');
+							dynamic_sidebar('latest');
+							}
+						?>
 
 					<div class="post comments">
 						<?php comments_template(''); ?>

@@ -47,6 +47,12 @@ footer {
 		z-index: 10;
 		font-size: 12px;
 		
+		a {
+		
+			font-weight: bold;
+		
+		}
+		
 		ul {
 		
 		li {
@@ -84,22 +90,28 @@ footer {
 			margin-right: 0px;
 			margin-left: -20px;
 			margin-top: 3px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 40%;
 			
 			a {
 			
 				color: @col-crimson;
-				font-weight: normal;
 			
 			}
 		
 		}
 		
 		&.previous {
+		white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 40%;
 		
 			a {
 			
 				color: @col-crimson;
-				font-weight: normal;
 			
 			}
 		

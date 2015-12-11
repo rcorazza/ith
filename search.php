@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 			<section class="contain-all main">
 				<section class="left-rail">
+					<div class="inner">
 					<div class="post archive">
 							<h2><?php printf( __( 'Search Results for: %s' ), get_search_query() ); ?></h2>
 					</div>
@@ -21,6 +22,7 @@
 					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 					<?php endif; ?>
 					<p class="more-posts"><?php posts_nav_link('','<span style="font-size: 17px;">&#8592;</span> MORE POSTS','MORE POSTS <span style="font-size: 17px;">&#8594;</span>'); ?></p>
+				</div>
 				</section>
 				<?php get_sidebar(); ?>
 			</section>	

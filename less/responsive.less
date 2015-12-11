@@ -1,3 +1,28 @@
+@media all and (max-width: 1325px) {
+
+	.board {display: none;}
+
+}
+
+@media all and (max-width: 1130px) {
+
+	.contain-all  {
+	
+	
+	.left-rail {
+	
+		width: 63%;
+	
+	}
+	
+	.right-rail {
+	
+		width: 32%;
+	
+	}
+	}
+
+}
 @media all and (max-width: 1050px) {
 
 header nav.main ul li {
@@ -56,7 +81,7 @@ header nav.main ul li {
 
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
 
 	.contain-all {
 	
@@ -118,6 +143,32 @@ header nav.main ul li {
 		display: none;
 	
 	}
+	
+	.widget_recent_entries ul, .top_content ul {float: left; width: 30%; margin-right: 5%;}
+	.widget_recent_entries ul:last-child, .top_content ul:last-child {margin-right: 0%;}
+	.widget_recent_entries ul li, .top_content ul li {clear: both; text-align: center; font-size: 12px;}
+	.widget_recent_entries h2, .top_content h2 {text-align: left; border-bottom: 1px solid @col-border;}
+	.contain-all .left-rail .post .filed {padding-bottom: 10px; border-bottom: 1px solid @col-border; margin-bottom: -5px;}
+	.widget {text-align: center;}
+	.single .bottom .widget h2, .bottom .top_content h2, .contain-all .left-rail .post.tease h2  {border-bottom: 1px solid @col-border;}
+	.widget h2 {text-align: left; border-bottom: none; padding-right: 0px;}
+	.widget .glyphicons, .widget.forum-tease .glyphicons {float: right;}
+	.widget.forum-tease .glyphicons:before {padding-left: 0px;}
+	.bottom .widget.forum-tease {border-bottom: none; margin-bottom: 10px;}
+	.widget.top_content {
+	border-bottom: 1px solid @col-ccc; margin-bottom: 20px;
+	
+	&:after {
+	
+				content:"";
+				display:table;
+				clear:both;
+
+			}
+			
+	
+	}
+	.right-rail .widget {display: none;}
 
 }
 
@@ -167,9 +218,9 @@ header nav.main ul li {
 
 }
 
-@media all and (max-width: 820px) {
+@media all and (max-width: 765px) {
 
-	#header-ad {
+	#header-ad, #footer-ad {
 	
 		display: none;
 	
@@ -288,8 +339,35 @@ header nav.main ul li {
 	
 	}
 
-
-
+	footer {
+		
+		text-align: center;
+	
+		ul {
+	
+		float: none;
+		
+			li {
+		
+				float: none;
+				display: inline-block;
+				margin-bottom: 5px;
+				margin-left: 20px;
+				margin-right: 0px;
+				
+				&:first-child {
+				
+					margin-left: 0px;
+				
+				}
+		
+			}
+	
+		}
+		
+	}
+	
+	
 }
 
 @media all and (max-width: 310px) {

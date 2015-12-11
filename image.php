@@ -2,6 +2,7 @@
 	<div class="full-wrap">
 		<div class="single main image contain-all">
 			<div class="left-rail">
+				<div class="inner">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class="post">				
 						<h2>
@@ -28,6 +29,7 @@
 					<div class="post comments">
 						<?php comments_template(''); ?>
 						<?php dynamic_sidebar('double ad'); ?>
+					</div>
 					</div>
 			</div>
 		<?php get_sidebar(); ?>
