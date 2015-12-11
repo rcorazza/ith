@@ -24,9 +24,6 @@
 				<li><a href="http://twitter.com/insidethehall" target="_blank">Twitter</a></li>
 			</ul>	
 			<div style="clear: both; float: right; margin-bottom: 20px;" id="footer-ad">
-			<!--[if (lte IE 8) | (IE9) ]>  					
-<script type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=283639&u=pabozich&width=728&height=90"></script>
-<![endif]-->
 <img src="/wp-content/themes/stemler/assets/img/banner_ad.png">
 			</div>	
 		</div>		
