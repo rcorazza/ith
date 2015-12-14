@@ -128,6 +128,9 @@ function drop_cats()
     echo "</select>";
 }
 
+
+ 
+
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_script_enqueue", 11);
 
  
@@ -165,7 +168,4 @@ function disable_emojicons_tinymce( $plugins ) {
   } else {
     return array();
   }
-}
-
-?>
-
+}?>

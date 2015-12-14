@@ -42,7 +42,7 @@
 						</div>
 					</div>
 						
-					<p class="big">
+					<p class="featured">
 						<?php the_post_thumbnail(); ?>
 					</p>
 						
@@ -125,8 +125,8 @@
 				</div>	
 				<div class="post comments">
 						<?php comments_template(''); ?>
-						<?php dynamic_sidebar('double ad'); ?>
 				</div>
+				<?php dynamic_sidebar('double ad'); ?>
 			</div>
 			</div>
 		<?php get_sidebar(); ?>
