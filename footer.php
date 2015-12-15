@@ -3,8 +3,8 @@
 		<div class="contain-all">
 			<ul>
 				<li><a class="bubble" href="<?php the_permalink(); ?>#disqus_thread">&nbsp;</a></li>
-				<li class="previous"><a href="#"><?php previous_post_link('&#8592; %link'); ?> </a></li>
-				<li class="next"><a href="#"><?php next_post_link('%link &#8594;'); ?></a></li>
+				<li class="previous"><?php previous_post_link('%link'); ?> </li>
+				<li class="next"><?php next_post_link('%link'); ?></li>
 				<li class="twitter"><a class="tweetable" data-user="insidethehall" data-message="<?php echo urlencode(the_title()); ?>" href="#" rel="nofollow" target="_blank"><span style="padding-top: 2px; padding-left: 1px;" class="genericon genericon-twitter"></span></a></li>
 				<li class="facebook"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>"><span style="padding-left: -2px; padding-top: 1px;" class="genericon genericon-facebook-alt"></span></a></li>
 			</ul>	
@@ -23,8 +23,7 @@
 				<li><a href="http://facebook.com/insidethehall" target="_blank">Facebook</a></li>
 				<li><a href="http://twitter.com/insidethehall" target="_blank">Twitter</a></li>
 			</ul>	
-			<div style="clear: both; float: right; margin-bottom: 20px;" id="footer-ad">
-<img src="/wp-content/themes/stemler/assets/img/banner_ad.png">
+			<div id="footer-ad">
 			</div>	
 		</div>		
 	</footer>

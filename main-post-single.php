@@ -46,7 +46,15 @@ foreach( $cats as $cat ) { ?>
 
 		 <?php } else { ?>
 					 
-		<p class="featured"><?php the_post_thumbnail(); ?></p>         
+					 
+		<p class="featured">
+		<?php if(!is_mobile()) {
+		    the_post_thumbnail();
+			}
+			else {
+			the_post_thumbnail( 'large' );
+			}
+			?></p>         
 					 
 		<?php } ?>
 	

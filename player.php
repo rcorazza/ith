@@ -16,8 +16,13 @@
 							</div> 
 														
 							<p class="featured">
-								<?php the_post_thumbnail(); ?>
-							</p>
+		<?php if(!is_mobile()) {
+		    the_post_thumbnail();
+			}
+			else {
+			the_post_thumbnail( 'large' );
+			}
+			?></p>  
 							
 								
 							
@@ -61,7 +66,7 @@
 							
 									<h2>Photos</h2>
 									
-									<p class="perma click"><a id="photo-click" href="#">see all <?php the_title(); ?> photos &#8594;</a></p>
+									<p class="perma click"><a id="photo-click" href="#">see all <?php the_title(); ?> photos <span style="font-size: 17px;">&#8594;</span></a></p>
 									
                  					<div id="holder">
 									<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>

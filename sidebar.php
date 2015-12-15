@@ -57,21 +57,21 @@
 				 }
 		  	?>
 				
-			<div>
-				<img src="/wp-content/themes/stemler/assets/img/sidebar-first.jpg">
+			<div id="top-ad">
 			</div>	
 			
-			<div>
-				<img src="/wp-content/themes/stemler/assets/img/sidebar-first.jpg">
+			<div id="bottom-ad">
 			</div>	
 			
 			<div>
 				<img src="http://www.insidethehall.com/wp-content/uploads/2015/07/badge_300.png">
 			</div>	
 			
-			<div>
-				<img src="/wp-content/themes/stemler/assets/img/sidebar-long.jpg">
-				<img src="/wp-content/themes/stemler/assets/img/sidebar-long.jpg">
+			<div id="left-sidebar-ad">
 			</div>
+			
+			<div id="right-sidebar-ad">
+			</div>
+			
 		</div>
 	</section>	

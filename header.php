@@ -50,6 +50,6 @@
 				</a>
 			</div>
 			<div id="header-ad">
-				<img src="/wp-content/themes/stemler/assets/img/banner_ad.png">
+				
 			</div>
 		</div>

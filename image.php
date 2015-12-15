@@ -13,7 +13,8 @@
 						<div style="clear: both;"></div>
 						<?php the_content(); ?> 
 						<p class="featured">
-							<a href="<?php echo wp_get_attachment_url($post->ID); ?>"> <?php echo wp_get_attachment_image( $post->ID,'full' ); ?></a>
+							<a href="<?php echo wp_get_attachment_url($post->ID); ?>"> <?php echo wp_get_attachment_image( $post->ID,'full' ); ?></a><br />
+							<a href="http://jscottphotography.com/" target="_blank">&copy; J. Scott Photography</a>
 						</p>
 
 						<div class="navigation_image">

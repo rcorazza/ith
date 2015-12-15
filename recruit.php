@@ -43,8 +43,13 @@
 					</div>
 						
 					<p class="featured">
-						<?php the_post_thumbnail(); ?>
-					</p>
+		<?php if(!is_mobile()) {
+		    the_post_thumbnail();
+			}
+			else {
+			the_post_thumbnail( 'large' );
+			}
+			?></p>  
 						
 						
 					<p style="float: left;"><strong>Class of <?php echo $class; ?></strong></p>
