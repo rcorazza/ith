@@ -36,7 +36,7 @@ register_sidebar( array(
 	register_sidebar( array(
 		'name' => 'forum teaser',
 		'id' => 'forum_tease',
-		'before_widget' => '<div id="forum-tease" class="forum-tease widget %2$s"><span class="glyphicons conversation"></span> ',
+		'before_widget' => '<div id="forum-tease" class="forum-tease widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',

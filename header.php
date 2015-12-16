@@ -38,8 +38,6 @@
 						<li><a class="open" href="#"><span></span><span></span><span></span></a></li>
 					</ul>
 				</nav>
-				<?php get_search_form(); ?>
-				<?php get_template_part('nav'); ?>
 			</div>			
 		</header>
 		
@@ -49,6 +47,8 @@
 					<img width="130px" src="/wp-content/themes/stemler/assets/img/ith-logo.jpg">
 				</a>
 			</div>
+				<?php get_search_form(); ?>
+				<?php get_template_part('nav'); ?>
 			<div id="header-ad">
 				
 			</div>

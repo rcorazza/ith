@@ -29,6 +29,8 @@ a {
 
 }
 
+p img {max-width: 100%; width: auto;}
+
 .slideDown {
 
 	    -webkit-transform: translateY(0);
@@ -79,8 +81,6 @@ h2 {
 	.single-post footer {padding-bottom: 30px;}
 	
 	.contain-all.single .left-rail .post ul.author-share {
-			
-				width: auto;
 				
 				li:last-child {float: left;}
 			
@@ -133,7 +133,7 @@ h2 {
 	&.main {
 
 		margin-bottom: 20px;
-		margin-top: 40px;
+		margin-top: 20px;
 		max-width: 1440px;
 
 	}
@@ -442,7 +442,7 @@ h2 {
 			
 		
 		
-		&.sponsored, blockquote {
+		&.sponsored, blockquote, .box {
 		
 			background: @col-border;
 			padding: 20px;
@@ -455,6 +455,7 @@ h2 {
 		
 			text-align: center;
 		
+			.box {margin-top: -20px;}
 		}
 		
 		&:after {
@@ -802,172 +803,7 @@ header {
 		
 		}
 		
-		.search-form {
 		
-			float: right;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			padding-left: 20px;
-			padding-right: 20px;
-			display: none;
-			clear: both;
-			position: absolute;
-			background: @col-back;
-			padding-left: 10px;
-			padding-right: 10px;
-			right: -10px;
-			top: 43px;
-			border: 1px solid @col-border;
-		
-		.search-field {
-		
-			border: 1px solid @col-border;
-			padding: 10px;
-		
-		}
-		
-		.search-submit {
-		
-			border: 1px solid @col-crimson;
-			background: #ffffff;
-			font-family: @font-sans;
-			font-weight: bold;
-			transition: all .5s;
-			-webkit-transition: all .5s;
-			color: @col-crimson;
-		
-		&:hover {
-		
-			background: @col-crimson;
-			color: #ffffff;
-		
-		}
-		
-		}
-		
-		&.show {
-		
-			display: block;
-		
-		}
-		
-		}
-	
-		nav {
-		
-			ul {
-			
-				float: right;
-				margin: 10px 0px;
-			
-				li {
-				
-					float: left;
-					margin-right: 18px;
-					
-					a {
-					
-						text-decoration: none;
-						color: @col-crimson;
-					
-					}
-					
-				
-					.glyphicons.search {
-					
-						padding-left: 10px;
-						vertical-align: top;
-						
-						
-						&:before {
-						
-							font-size: 12px;
-							color: @col-crimson;
-							padding-top: 3px;
-						
-						}
-					
-					}
-					
-					
-					&:nth-child(11) {
-					
-					 margin-right: 0px;
-					
-					}
-				
-				}
-			
-			}
-			
-			
-			&.main {
-			
-			ul li {
-			
-			&:last-child {
-					
-					 margin-right: 0px;
-					 display: none;
-					 
-					 span {
-					
-						float: right;
-					    display: block;
-						clear: both;
-						height: 4px;
-						width: 30px;
-						border-top: 1px solid @col-crimson;
-						background: @col-back;
-						
-					&:first-child	{
-					
-						margin-top: 4px;
-					
-					}
-					
-					}
-					 
-					 
-					
-					}
-			
-				}
-			
-			
-			}
-			
-		&.responsive {
-
-			display: none;
-			clear: both;
-		    position: absolute;
-			background: @col-back;
-			padding-left: 10px;
-			padding-right: 10px;
-			right: -10px;
-			top: 43px;
-			border: 1px solid @col-border;
-		
-		ul li {
-		
-		float: right;
-		clear: both;
-		margin-right: 0px;
-		margin-bottom: 10px;
-		
-		}
-			
-			
-			&.open {
-
-				display: block;
-
-			}		
-
-		}
-		
-		}
 		
 	&:after {
 	

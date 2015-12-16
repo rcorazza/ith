@@ -62,7 +62,7 @@ header nav.main ul li {
 	
 	}
 	
-	header nav.responsive ul li {
+	 nav.responsive ul li {
 		
 		&:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
 		
@@ -98,10 +98,15 @@ header nav.main ul li {
 		
 			float: none;
 			clear: both;
-			width: 640px;
+			width: 100%;
 			margin: 60px auto 0px auto;
+			
+			.inner {
+				max-width: none;
+				}
 		
 		}
+		
 		
 	&.buffer {
 	
@@ -169,6 +174,8 @@ header nav.main ul li {
 	
 	}
 	.right-rail .widget {display: none;}
+	#top-ad {float: left;}
+		#bottom-ad {float: right;}
 
 }
 
@@ -176,7 +183,7 @@ header nav.main ul li {
 
 @media all and (max-width: 860px) {
 
-		header nav.main ul li {
+	 nav.main ul li {
 	
 		&:last-child {
 		
@@ -204,7 +211,7 @@ header nav.main ul li {
 	
 	}
 	
-	header nav.responsive ul li {
+	 nav.responsive ul li {
 		
 			&:nth-child(6), &:nth-child(7), &:nth-child(8) {
 		
@@ -274,11 +281,18 @@ header nav.main ul li {
 	.table {display: block;}
 }
 
+@media all and (max-width: 667px) {
+	
+	#top-ad, #bottom-ad {float: none;}
+		
+
+}
+
 @media all and (max-width: 575px) {
 
 		.contain-all {width: 93%;}
 		
-		header nav.main ul li {
+		 nav.main ul li {
 	
 		&:last-child {
 		
@@ -309,13 +323,19 @@ header nav.main ul li {
 			display: none;
 		
 		}
+		
+		&:nth-child(11) {
+		
+			display: none;
+		
+		}
 	
 	}
 	
-		header nav.responsive ul li {
+		 nav.responsive ul li {
 		
 		
-		&:nth-child(2), &:nth-child(3), &:nth-child(4),  &:nth-child(5)  {
+		&:nth-child(2), &:nth-child(3), &:nth-child(4),  &:nth-child(5), &:first-child  {
 		
 			display: block;
 		
@@ -338,7 +358,18 @@ header nav.main ul li {
 		max-width: inherit;
 	
 	}
-
+	
+	nav.responsive {width: 100%; right: 0; padding-right: 0; padding-left: 0; padding-bottom: 20px;}
+	nav.responsive ul {padding-top: 70px; width: 88%; text-align: center; padding-bottom: 40px; float: none; margin: 0 auto;}
+	nav.responsive ul li {float: none;}
+	nav.responsive ul li:nth-child(even) {float: right; clear: none;}
+	nav.responsive ul li:nth-child(odd) {float: left; clear: none;}
+	nav.responsive ul li:nth-child(3),
+	nav.responsive ul li:nth-child(5),
+	nav.responsive ul li:nth-child(7),
+	nav.responsive ul li:nth-child(9) {clear: both;}
+	.search-form {z-index: 6; background: none; border: none; float: none; width: 100%; margin-top: 0px; right: 0px; padding-left: 0px; padding-right: 0px;}
+	.search-form .search-field {width: 90%;}
 	footer {
 		
 		text-align: center;
@@ -371,9 +402,10 @@ header nav.main ul li {
 	
 }
 
+
 @media all and (max-width: 310px) {
 
-		header nav.main ul li {
+		 nav.main ul li {
 	
 		&:first-child {
 		
@@ -383,7 +415,7 @@ header nav.main ul li {
 		
 	}	
 	
-	header nav.responsive ul li {
+	 nav.responsive ul li {
 	
 		&:first-child {
 		

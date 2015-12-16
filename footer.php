@@ -32,29 +32,6 @@
    <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>
 	<script>
 	
-		var mag = document.querySelector("nav ul li a.search");
-			
-		mag.onclick = function(event) {
-			event.preventDefault();
-			var form = document.querySelector(".search-form");
-			var respond = document.querySelector(".responsive");
-			form.classList.toggle('show');
-			if (respond.classList.contains("open")) {
-				respond.classList.toggle('open');
-			}  
-		}
-		
-		var opener = document.querySelector("nav ul li a.open");
-			
-		opener.onclick = function(event) {
-			event.preventDefault();
-			var respond = document.querySelector(".responsive");
-			respond.classList.toggle('open');
-			var form = document.querySelector(".search-form");
-			if (form.classList.contains("show")) {
-				form.classList.toggle('show');
-			}  
-		}
 		
 		<?php if ( is_page_template('player.php')) {  ?>
 
