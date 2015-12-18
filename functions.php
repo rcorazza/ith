@@ -15,38 +15,39 @@ wp_enqueue_style( 'less-style', get_stylesheet_directory_uri() . '/style.less' )
 
 add_theme_support( 'post-thumbnails' ); 
 
+
 register_sidebar( array(
 		'name' => 'top content',
 		'id' => 'home_right_3',
-		'before_widget' => '<div id="%1$s" class="widget top_content"><span class="glyphicons retweet"></span>',
-		'after_widget' => '</div>',
-		'before_title' => '<h2>',
+		'before_widget' => '<div id="%1$s" class="widget top_content"><div class="snap">',
+		'after_widget' => '</div></div>',
+		'before_title' => '<span class="glyphicons retweet"></span><h2>',
 		'after_title' => '</h2>',
 	) );
 	
-	register_sidebar( array(
-		'name' => 'top story',
-		'id' => 'top_story',
-		'before_widget' => '<div id="top-story" class="top-story %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h2>',
-		'after_title' => '</h2>',
-	) );	
-	
-	register_sidebar( array(
-		'name' => 'forum teaser',
-		'id' => 'forum_tease',
-		'before_widget' => '<div id="forum-tease" class="forum-tease widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h2>',
-		'after_title' => '</h2>',
-	) );	
+register_sidebar( array(
+	'name' => 'top story',
+	'id' => 'top_story',
+	'before_widget' => '<div id="top-story" class="top-story %2$s">',
+	'after_widget' => '</div>',
+	'before_title' => '<h2>',
+	'after_title' => '</h2>',
+) );	
+
+register_sidebar( array(
+	'name' => 'forum teaser',
+	'id' => 'forum_tease',
+	'before_widget' => '<div id="forum-tease" class="forum-tease widget %2$s"><div class="snap">',
+	'after_widget' => '</div></div>',
+	'before_title' => '<h2>',
+	'after_title' => '</h2>',
+) );	
 	
 register_sidebar( array(
 		'name' => 'double ad',
 		'id' => 'double_ad',
-		'before_widget' => '<div id="double-ad" class="widget %2$s">',
-		'after_widget' => '</div>',
+		'before_widget' => '<div id="double-ad" class="widget %2$s"><div class="snap">',
+		'after_widget' => '</div></div>',
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	) );	
@@ -54,36 +55,45 @@ register_sidebar( array(
 register_sidebar( array(
 		'name' => 'latest',
 		'id' => 'home_right_5',
-		'before_widget' => '<div id="%1$s" class="widget %2$s"><span class="glyphicons refresh"></span>',
-		'after_widget' => '</div>',
-		'before_title' => '<h2>',
+		'before_widget' => '<div id="%1$s" class="widget latest %2$s"><div class="snap">',
+		'after_widget' => '</div></div>',
+		'before_title' => '<span class="glyphicons refresh"></span><h2>',
 		'after_title' => '</h2>',
 	) );	
 	
 register_sidebar( array(
 		'name' => 'Roster',
 		'id' => 'roster',
-		'before_widget' => '<div id="roster" class="widget %2$s"><span style="margin-top: -2px;" class="glyphicons notes_2"></span>',
-		'after_widget' => '</div>',
-		'before_title' => '<h2>',
+		'before_widget' => '<div id="roster" class="widget %2$s"><div class="snap">',
+		'after_widget' => '</div></div>',
+		'before_title' => '<span style="margin-top: -2px;" class="glyphicons notes_2"></span><h2>',
 		'after_title' => '</h2>',
 	) );
 register_sidebar( array(
 		'name' => 'Schedule',
 		'id' => 'schedule',
-		'before_widget' => '<div id="schedule" class="widget schedule"><span style="margin-top: -3px;" class="glyphicons calendar"></span>',
-		'after_widget' => '</div>',
-		'before_title' => '<h2>',
+		'before_widget' => '<div id="schedule" class="widget schedule"><div class="snap">',
+		'after_widget' => '</div></div>',
+		'before_title' => '<span style="margin-top: -3px;" class="glyphicons calendar"></span><h2>',
 		'after_title' => '</h2>',
 	) );		
 	register_sidebar( array(
 		'name' => 'Recruit',
 		'id' => 'recruit',
-		'before_widget' => '<div id="recruit" class="widget %2$s"><span class="glyphicons notes"></span>',
+		'before_widget' => '<div id="recruit" class="widget %2$s"><div class="snap">',
+		'after_widget' => '</div></div>',
+		'before_title' => '<span class="glyphicons notes"></span><h2>',
+		'after_title' => '</h2>',
+	) );	
+	
+	register_sidebar( array(
+		'name' => 'underground',
+		'id' => 'ugp',
+		'before_widget' => '<div id="%1$s" class="underground">',
 		'after_widget' => '</div>',
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
-	) );	
+	) );
 	
 add_filter('the_time', 'dynamictime');
 
@@ -109,22 +119,6 @@ function dynamictime() {
 
 }
 
-/**
- * Disable responsive image support (test!)
- */
-
-// Clean the up the image from wp_get_attachment_image()
-add_filter( 'wp_get_attachment_image_attributes', function( $attr )
-{
-    if( isset( $attr['sizes'] ) )
-        unset( $attr['sizes'] );
-
-    if( isset( $attr['srcset'] ) )
-        unset( $attr['srcset'] );
-
-    return $attr;
-
- }, PHP_INT_MAX );
 
 // Override the calculated image sizes
 add_filter( 'wp_calculate_image_sizes', '__return_false',  PHP_INT_MAX );
@@ -162,9 +156,6 @@ function drop_cats()
     }
     echo "</select>";
 }
-
-
- 
 
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_script_enqueue", 11);
 

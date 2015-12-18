@@ -98,11 +98,11 @@ header nav.main ul li {
 		
 			float: none;
 			clear: both;
-			width: 100%;
+			width: 640px;
 			margin: 60px auto 0px auto;
 			
 			.inner {
-				max-width: none;
+				max-width: 640px;
 				}
 		
 		}
@@ -157,8 +157,6 @@ header nav.main ul li {
 	.widget {text-align: center;}
 	.single .bottom .widget h2, .bottom .top_content h2, .contain-all .left-rail .post.tease h2  {border-bottom: 1px solid @col-border;}
 	.widget h2 {text-align: left; border-bottom: none; padding-right: 0px;}
-	.widget .glyphicons, .widget.forum-tease .glyphicons {float: right;}
-	.widget.forum-tease .glyphicons:before {padding-left: 0px;}
 	.bottom .widget.forum-tease {border-bottom: none; margin-bottom: 10px;}
 	.widget.top_content {
 	border-bottom: 1px solid @col-ccc; margin-bottom: 20px;
@@ -290,7 +288,12 @@ header nav.main ul li {
 
 @media all and (max-width: 575px) {
 
-		.contain-all {width: 93%;}
+	.widget .glyphicons, .widget.forum-tease .glyphicons {float: right;}
+	.widget.forum-tease .glyphicons:before {padding-left: 0px;}
+
+		.contain-all {width: 92%;}
+		
+		.contain-all.main {margin-top: 8px;}
 		
 		 nav.main ul li {
 	
@@ -351,13 +354,57 @@ header nav.main ul li {
 		}
 	
 	
-	.contain-all .left-rail .post p.featured {
 	
-		width: 113%;
-		margin-left: -6%;
-		max-width: inherit;
+		.contain-all.main {
+		
+			width: 100%;
+			
+			.left-rail .post p:not(.featured), .mejs-container  {
+			
+			width: 92% !important;
+			margin: 16px auto;
+			
+			}
+
+			 .left-rail .post h2, .post ul.author-share, .widget div.snap, .left-rail .post.comments, .left-rail .post ul  {
+		
+				width: 92%;
+				margin: 0 auto;
+			
+			}
+			
+			.left-rail ul.post-categories {
+				max-width: auto;
+				margin: 0px 0px 0px 0px;
+				width: auto;
+			
+			}
+			
+			 .left-rail .post h2 {
+			 
+				margin-bottom: 10px;
+			 
+			 }
+			
+			.post ul.author-share {
+			margin-left: 4%;
+			margin-bottom: 20px;
+			
+			}
+			
+			.right-rail {
+			
+				width: 92%;
+				margin: 60px auto 0px auto;
+			
+			}
+			
+			.widget p {width: 100%;}
+		
+		#double-ad .post, #double-ad .snap {width: 100%;}
+		}
+
 	
-	}
 	
 	nav.responsive {width: 100%; right: 0; padding-right: 0; padding-left: 0; padding-bottom: 20px;}
 	nav.responsive ul {padding-top: 70px; width: 88%; text-align: center; padding-bottom: 40px; float: none; margin: 0 auto;}
