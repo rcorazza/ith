@@ -1,2 +1,3 @@
 # ith
-Stemler Wordpress theme for Inside the Hall
+Priller Wordpress theme for Inside the Hall.
+Using wp-less for styles. 
