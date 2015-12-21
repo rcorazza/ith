@@ -7,11 +7,8 @@
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<!--[if lte IE 9]>
-<script src="https://cdn.jsdelivr.net/classlist/2014.01.31/classList.min.js"></script>
-<![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Vollkorn|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-<link href='/wp-content/themes/stemler/assets/css/main.css' rel='stylesheet' type='text/css'>
+<link href='/wp-content/themes/priller/assets/css/main.css' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 <title>
    <?php // WordPress custom title script

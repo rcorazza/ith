@@ -66,7 +66,7 @@ register_sidebar( array(
 		'id' => 'roster',
 		'before_widget' => '<div id="roster" class="widget %2$s"><div class="snap">',
 		'after_widget' => '</div></div>',
-		'before_title' => '<span style="margin-top: -2px;" class="glyphicons notes_2"></span><h2>',
+		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	) );
 register_sidebar( array(
@@ -74,7 +74,7 @@ register_sidebar( array(
 		'id' => 'schedule',
 		'before_widget' => '<div id="schedule" class="widget schedule"><div class="snap">',
 		'after_widget' => '</div></div>',
-		'before_title' => '<span style="margin-top: -3px;" class="glyphicons calendar"></span><h2>',
+		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	) );		
 	register_sidebar( array(
@@ -119,7 +119,18 @@ function dynamictime() {
 
 }
 
+function my_deregister_scripts(){
+  wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'my_deregister_scripts' );
 
+add_filter( 'the_content', 'img_p_class_content_filter' ,20);
+function img_p_class_content_filter($content) {
+    // assuming you have created a page/post entitled 'debug'
+    $content = preg_replace("/(<p)(>[^<]*<img[^>]+>[^<]*)(<\/p>)/i", "\$1 class='content-img-wrap'\$2\$3", $content);
+
+    return $content;
+}
 // Override the calculated image sizes
 add_filter( 'wp_calculate_image_sizes', '__return_false',  PHP_INT_MAX );
 
@@ -128,8 +139,6 @@ add_filter( 'wp_calculate_image_srcset', '__return_false', PHP_INT_MAX );
 
 // Remove the reponsive stuff from the content
 remove_filter( 'the_content', 'wp_make_content_images_responsive' );
-
-
 
 function drop_tags()
 {

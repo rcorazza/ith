@@ -15,7 +15,7 @@
             <header>
                <div class="contain-all">
                   <ul class="logo">
-                     <li><a href="/"><img width="13px" src="/wp-content/themes/stemler/assets/img/state.jpg">Inside The Hall</a></li>
+                     <li><a href="/"><img width="13px" src="/wp-content/themes/priller/assets/img/state.jpg">Inside The Hall</a></li>
                   </ul>
                   <nav class="main">
                      <ul>
@@ -38,7 +38,7 @@
             <div class="contain-all buffer">
                <div class="hang">
                   <a href="/">
-                  <img width="130px" src="/wp-content/themes/stemler/assets/img/ith-logo.jpg">
+                  <img width="130px" src="/wp-content/themes/priller/assets/img/ith-logo.jpg">
                   </a>
                </div>
                <?php get_search_form(); ?>

@@ -275,7 +275,7 @@ $('.logo').on('click', 'li a', function() {
 	}	
 });
 
-$('.main').on('click', 'ul li:first-child a', function() {
+$('.main').on('click', 'a', function() {
 	if ($(window).width() < 576) {
 	    ga('send', 'event', 'link', 'click', 'forum main mobile');
 	}
@@ -285,6 +285,7 @@ $('.main').on('click', 'ul li:first-child a', function() {
 	
 	else {
 		ga('send', 'event', 'link', 'click', 'forum main');
+		alert('hello!');
 	}	
 });
 
