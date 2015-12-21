@@ -1,0 +1,27 @@
+iframe {    
+    border: none;
+    padding: 0;
+    margin: 0 0;
+    overflow: hidden;
+	}
+	
+#header-ad iframe, #footer-ad iframe {height: 123px; width: 740px !important;}	
+#top-ad iframe, #bottom-ad iframe, #stream-one iframe, #stream-two iframe {height: 285px; width: 310px !important;}
+#right-sidebar-ad iframe, #left-sidebar-ad iframe {height: 620px; float: left; width: 179px !important;}
+#right-sidebar-ad iframe {float: right;}
+#footer-ad {clear: both; float: right; margin-bottom: 20px;}
+
+@media all and (max-width: 1280px)and (min-width: 1200px) {
+#right-sidebar-ad {margin-right: -5%;}
+#left-sidebar-ad {margin-left: -5%;}
+}
+@media all and (max-width: 1199px) and (min-width: 1024px) {
+#right-sidebar-ad {margin-right: -10%;}
+#left-sidebar-ad {margin-left: -10%;}
+}
+
+@media all and (max-width: 1024px) {
+
+#right-sidebar-ad iframe, #left-sidebar-ad iframe, #right-sidebar-ad, #left-sidebar-ad {float: none; display: inline-block;}
+
+}
