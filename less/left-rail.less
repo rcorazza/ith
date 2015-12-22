@@ -70,7 +70,7 @@
 			
 			border-bottom: 1px solid @col-ccc;
 			clear: both;
-			margin-bottom: 15px;
+			margin-bottom: 20px;
 			
 		.navigation_image {
 		
@@ -143,7 +143,7 @@
 				
 			&:before {
 			
-				color: @col-dlink;
+				color: #000000;
 				font-size: 20px;
 
 
@@ -174,6 +174,7 @@
 			clear: both;
 			color: @col-crimson;
 			margin-top: 0px;
+			font-size: 24px;
 			
 			
 			}
@@ -187,7 +188,7 @@
 		
 			p, ul {
 			
-				line-height: 1.5;
+				line-height: 1.6;
 				max-width: 640px;
 				margin: 16px auto;
 			
@@ -205,7 +206,7 @@
 			
 			}
 			
-			ul.author-share {
+			.author-share {
 			
 				font-size: 12px;
 				margin-bottom: 10px;
@@ -213,9 +214,15 @@
 				float: left;
 				width: 100%;
 				color: @col-dlink;
-				margin-top: -5px;
+				margin-top: 5px;
 				margin-bottom: 20px;
 				max-width: 100%;
+				
+				div {
+				
+					float: left;
+				
+				}
 				
 				img {
 				
@@ -224,12 +231,27 @@
 				margin-right: 10px;
 				
 				}
+				
+				ul {
+				
+					margin: 0px;
+					float: left;
+					
+				
+				}
+				
+				ul:nth-child(2) {
+				
+					clear: left;
+				
+				}
 			
 				
 				li {
 				
 					float: left;
 					margin-bottom: 0px;
+					clear: both;
 				
 					a {
 					
@@ -278,18 +300,19 @@
 			
 			ul.post-categories {
 			
-				float: right;
+				float: left;
 				font-size: 12px;
 				padding-left: 3px;
 				padding-top: 0px;
 				max-width: auto;
-				margin: 1px 2px 0px 0px;
+				margin: 0px 0px 0px 0px;
+				clear: none;
 				
 				
 				a {
 					
 					color: @col-dlink;
-					font-weight: normal;
+					font-weight: bold;
 					
 					&:hover {
 						
@@ -425,4 +448,8 @@
 	
 	}
 	
-	 
+	.home .left-rail .post .author-share {
+	
+		margin-top: -5px;
+	
+	}

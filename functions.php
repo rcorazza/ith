@@ -82,7 +82,7 @@ register_sidebar( array(
 		'id' => 'recruit',
 		'before_widget' => '<div id="recruit" class="widget %2$s"><div class="snap">',
 		'after_widget' => '</div></div>',
-		'before_title' => '<span class="glyphicons notes"></span><h2>',
+		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	) );	
 	

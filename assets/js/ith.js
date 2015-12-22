@@ -275,7 +275,7 @@ $('.logo').on('click', 'li a', function() {
 	}	
 });
 
-$('.main').on('click', 'a', function() {
+$('header nav.main').on('click', 'ul li:first-child a', function() {
 	if ($(window).width() < 576) {
 	    ga('send', 'event', 'link', 'click', 'forum main mobile');
 	}
@@ -390,7 +390,7 @@ $('.main').on('click', 'ul li:nth-child(10) a', function() {
 	}
 });
 
-$('.main').on('click', 'ul li:last-child(10) a', function() {
+$('.main').on('click', 'ul li:last-child a', function() {
 	 if ($(window).width() < 576) {
 	    ga('send', 'event', 'link', 'click', 'hamburger mobile');
 	}
@@ -536,7 +536,7 @@ $('.forum-tease').on('click', 'p a:last-child', function() {
 	}
 	
 	else {
-		ga('send', 'event', 'link', 'click', 'forum third third');
+		ga('send', 'event', 'link', 'click', 'forum third tease');
 	}
 });
 
