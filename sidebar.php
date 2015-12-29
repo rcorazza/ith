@@ -52,4 +52,4 @@
         <div id="right-sidebar-ad">
         </div>
     </div>
-</section>
+</aside>
