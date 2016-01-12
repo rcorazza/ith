@@ -11,14 +11,17 @@
             <?php if( $wp_query->current_post == 0 ) { 
                 if( is_mobile()) { 
                 dynamic_sidebar('top content'); 
+				echo '<div id="nativoaboveHP"></div>';
                 } 
                 else if ( !is_mobile() || !is_tablet() ) { 
                 dynamic_sidebar('underground');
                 dynamic_sidebar('forum teaser'); 
+				echo '<div id="nativoaboveHP"></div>';
                 }
                 else if (is_tablet()) { 
                 dynamic_sidebar('underground');
                 dynamic_sidebar('top content'); 
+				echo '<div id="nativoaboveHP"></div>';
                 } 
                 } ?>          
             <?php if( $wp_query->current_post == 1) { 
@@ -39,7 +42,7 @@
         </div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'ithtest'; // required: replace example with your forum shortname
+            var disqus_shortname = 'insidethehall'; // required: replace example with your forum shortname
             
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function () {
