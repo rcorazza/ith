@@ -1,6 +1,6 @@
 <article class="post <?php if ( in_category( 'Sponsored' )) {  ?>sponsored<?php } ?>">
     <h2>
-        <a href='<?php the_permalink() ?>'	rel='bookmark' title='<?php the_title(); ?>'>	<?php the_title(); ?></a>
+        <a href='<?php the_permalink() ?>'	rel='bookmark'>	<?php the_title(); ?></a>
     </h2>
     <div class="author-share">
         <?php the_author_image(); ?>
@@ -61,7 +61,7 @@
     <?php } elseif ( in_category ( 'Film Session' )) {  ?>
     <?php } else { ?>
     <p class="featured">
-        <?php if(!is_mobile()) {
+	   <?php if(!is_mobile()) {
             the_post_thumbnail();
             }
             else {

@@ -8,6 +8,7 @@
     <?php } elseif ( in_category ( 'Film Session' )) {  ?>
     <?php } else { ?>
     <p class="featured">
+	    <a href='<?php the_permalink() ?>'>
         <?php if(!is_mobile()) {
             the_post_thumbnail();
             }
@@ -15,6 +16,7 @@
             the_post_thumbnail( 'large' );
             }
             ?>
+		</a>	
     </p>
     <?php } ?>
     <?php the_content('<span class="offset">Read <span style="font-size: 17px;">&#8594;</span></span>'); ?> 

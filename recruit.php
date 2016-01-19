@@ -102,6 +102,8 @@
             </div>
             <div class="post comments">
                 <?php comments_template(''); ?>
+				<div class="OUTBRAIN" data-src="" data-widget-id="TF_1" data-ob-template="InsideTheHall"></div>
+				<script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script>
             </div>
             <?php dynamic_sidebar('double ad'); ?>
         </div>

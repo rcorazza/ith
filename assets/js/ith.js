@@ -58,7 +58,7 @@ $('.video-container iframe').each(function(){
 
  function doCallback() {
     var user = $(this).data('user');
-    var text = "\"" + ($(this).data('message') || $(this).text()) + "\" " + window.location.href + (user ? " via @" + $(this).data('user') : '');
+    var text = "" + ($(this).data('message') || $(this).text()) + " " + window.location.href + (user ? " via @" + $(this).data('user') : '');
     var original_start = new Date();
     var lag = 1250;
 
@@ -72,12 +72,13 @@ $('.video-container iframe').each(function(){
       } else {
         // That was too fast so we can assume they don't have the app.
         var intent_url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
-        window.open(intent_url, "_self");
+        window.open(intent_url, "_blank");
       }
     }, lag);
     return false;
   }
 
+   
   $(".tweetable").on("click", doCallback);
   
   if (!$("html").hasClass("ie8") && !$("html").hasClass("ie9"))  {
@@ -285,7 +286,6 @@ $('header nav.main').on('click', 'ul li:first-child a', function() {
 	
 	else {
 		ga('send', 'event', 'link', 'click', 'forum main');
-		alert('hello!');
 	}	
 });
 
