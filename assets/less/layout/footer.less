@@ -1,0 +1,220 @@
+footer {
+
+	font-size: 12px;
+	border-top: 1px solid @col-border;
+	padding-top: 20px;
+	margin-top: 40px;
+	position: relative;
+	clear: both;
+	
+		ul {
+		
+			float: right;
+			margin-bottom: 20px;
+			
+			li {
+			
+				float: left;
+				margin-right: 20px;
+				
+				a {
+				
+					color: @col-text;
+				
+				}
+				
+				&:last-child {
+				
+					margin-right: 0px;
+				
+				}
+			
+			}
+		}
+		
+}
+
+.foot-nav {
+
+	background: @col-back;
+	border-top: 1px solid @col-border;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	z-index: 10;
+	font-size: 12px;
+	
+	
+	ul {
+	
+		float: none;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		margin: 0px 0px;
+		
+	li {
+	
+		float: none; 
+        margin-right: 0; 
+	    text-align: center;
+	    
+	    img {
+	    	
+			display: block;
+			margin: 0 auto 3px;
+	    
+	    }
+	    
+	}	
+	
+	}
+
+
+}
+
+.fixed-foot {
+	
+		background: @col-back;
+		border-top: 1px solid @col-border;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		z-index: 10;
+		font-size: 12px;
+		
+		a {
+		
+			font-weight: bold;
+		
+		}
+		
+		ul {
+		
+		li {
+		
+			float: left;
+			margin-right: 40px;
+			
+			a {
+					
+				color: @col-dlink;
+				font-weight: bold;
+					
+				&:hover {
+						
+				text-decoration: underline;
+						
+				}
+		}
+		
+		&:first-child {
+		
+			margin-top: 3px;
+		
+		}
+		
+		&:nth-child(2) {
+		
+			margin-top: 3px;
+			margin-left: -20px;
+		
+		}
+		
+		&.next {
+		
+			margin-right: 0px;
+			margin-left: -20px;
+			margin-top: 3px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 40%;
+			
+			a {
+			
+				color: @col-crimson;
+				&:after {content:"\00bb"; padding-left: 5px;}
+			
+			}
+		
+		}
+		
+		&.previous {
+		white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 40%;
+		
+			a {
+			
+				color: @col-crimson;
+			
+				&:before {content:"\00ab"; padding-right: 5px;}
+			}
+		
+		}
+		
+		&.twitter {
+		
+			float: right;
+			margin-right: 0px;
+			
+			a {
+			
+				    border: 1px solid @col-ccc;
+					    padding: 0px 2px 4px 2px;
+					
+					&:hover {
+						
+							background: @col-ccc;
+							color: #ffffff;
+							text-decoration: none;
+						
+						
+						}
+			
+			
+			}
+		
+		}
+		
+		&.facebook {
+		
+			float: right;
+			margin-right: 10px;
+			margin-left: 0px;
+			
+			a {
+			
+				    border: 1px solid @col-ccc;
+					    padding: 0px 2px 4px 2px;
+					
+						&:hover {
+						
+							background: @col-ccc;
+							color: #ffffff;
+							text-decoration: none;
+						
+						
+						}
+			
+			
+			}
+		
+		}
+		
+		}
+
+
+	}	
+	
+	}
+	
+	
