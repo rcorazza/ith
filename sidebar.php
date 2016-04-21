@@ -17,8 +17,20 @@
              dynamic_sidebar('roster');
             }
             if (is_page_template('schedule.php') && !is_mobile() && !is_tablet() ) {
-            dynamic_sidebar('schedule');
-            }  
+            dynamic_sidebar('schedule');  
+            } 
+            if (is_single('') && !is_mobile() && !is_tablet() ) {
+            dynamic_sidebar('forum teaser');
+            }
+            if (is_search('') && !is_mobile() && !is_tablet() ) {
+            dynamic_sidebar('forum teaser');
+            }
+            if (is_page('') && !is_mobile() && !is_tablet() && !is_page_template('schedule.php') && !is_page_template('player.php') && !is_page_template('recruit.php') && !is_page_template('schedule.php') && !is_page_template('roster.php')) {
+            dynamic_sidebar('forum teaser');
+            }
+            if (is_404()&& !is_mobile() && !is_tablet() ) {
+            dynamic_sidebar('forum teaser');
+            } 
             else {
              }
              ?>
