@@ -30,6 +30,12 @@ header {
 				padding-right: 2px;
 			
 			}
+			
+		    li.svg-mobile {
+		    
+		    	display: none;
+		    
+		    }	
 		
 		}
 		
@@ -105,6 +111,8 @@ header {
 			
 			ul li {
 			
+			&:nth-child(4) {display: none;}
+			
 			&:last-child {
 					
 					 margin-right: 0px;
@@ -152,6 +160,16 @@ header {
 			top: -400px;
 			border: 1px solid @col-border;
 			z-index: 5;
+			
+			svg, div {display: none;}
+			div.tease-wrap {border-top: 1px solid @col-border; border-bottom: 1px solid @col-border; padding: 5px 0px; font-size: 14px; 
+			svg { width: 20px;
+    display: inline;
+    margin-bottom: 0px;
+    height: 20px;
+    vertical-align: middle;}
+    p:first-child svg {width: 15px; height: 15px; margin-top: -4px;}
+    }
 		
 		ul li {
 		
@@ -197,7 +215,7 @@ header {
 		
 		.search-field {
 		
-			border: 1px solid @col-border;
+			border: 1px solid #7d7d7d;
 			padding: 10px;
 		
 		}

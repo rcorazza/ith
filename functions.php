@@ -18,9 +18,9 @@ register_sidebar( array(
 		'name' => 'top content',
 		'id' => 'home_right_3',
 		'before_widget' => '<div id="%1$s" class="widget top_content"><div class="snap">',
-		'after_widget' => '</div></div>',
+		'after_widget' => '</div></div></div></div>',
 		'before_title' => '<span class="glyphicons retweet"></span><h2>',
-		'after_title' => '</h2>',
+		'after_title' => '</h2><div class="for-scroll"><div class="inner-scroll">',
 	) );
 	
 register_sidebar( array(
@@ -54,9 +54,9 @@ register_sidebar( array(
 		'name' => 'latest',
 		'id' => 'home_right_5',
 		'before_widget' => '<div id="%1$s" class="widget latest %2$s"><div class="snap">',
-		'after_widget' => '</div></div>',
+		'after_widget' => '</div></div></div></div>',
 		'before_title' => '<span class="glyphicons refresh"></span><h2>',
-		'after_title' => '</h2>',
+		'after_title' => '</h2><div class="for-scroll"><div class="inner-scroll">',
 	) );	
 	
 register_sidebar( array(

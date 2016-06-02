@@ -16,6 +16,7 @@
                <div class="contain-all">
                   <ul class="logo">
                      <li><a href="/"><img width="13px" src="/wp-content/themes/priller/assets/img/state.jpg">Inside The Hall</a></li>
+                  	<li class="svg-mobile"><a href="/"><img src="/wp-content/themes/priller/assets/img/svg/logo-svg-mobile.svg"></a></li -->
                   </ul>
                   <nav class="main">
                      <ul>
@@ -45,8 +46,4 @@
                <?php get_template_part('nav'); ?>
                <div id="header-ad">
                </div>
-               <?php if(is_mobile()) {
-                  dynamic_sidebar('underground');
-                  }
-                  ?>
             </div>

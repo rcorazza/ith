@@ -2,6 +2,10 @@
 <section class="contain-all main">
     <section class="left-rail">
         <div class="inner">
+        	<?php if(is_mobile()) {
+                  dynamic_sidebar('underground');
+                  }
+            ?>
             <?php define('PAGE_NUMBER', get_query_var('paged')); ?>
             <?php if (is_home() && PAGE_NUMBER < 2) : ?>
             <?php dynamic_sidebar('top story'); ?>
@@ -25,8 +29,8 @@
  			?>
                 <?php if( $wp_query->current_post == 0 ) { 
                 if( is_mobile()) { 
+                echo '<div id="nativoaboveHP"></div>';
                 dynamic_sidebar('top content'); 
-				echo '<div id="nativoaboveHP"></div>';
                 } 
                 else if ( !is_mobile() || !is_tablet() ) { 
                 dynamic_sidebar('underground');

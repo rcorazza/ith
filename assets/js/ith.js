@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
  
- $(".single .fixed-footer").on('click', '.bubble', function(e) {
+ $(".single .fixed-footer a, .single .foot-nav ul li:nth-child(4)").on('click', function(e) {
 	e.preventDefault();
     $('html, body').animate({
         scrollTop: $("#disqus_thread").offset().top - 45
@@ -31,6 +31,28 @@ $('nav ul li').on('click', 'a.open', function(e) {
 	if ($(window).width() > 575 && $('.search-form').hasClass('show')) {
 		$('.search-form').removeClass('show');
 	}
+	});	
+	
+	$('.single .foot-nav ul li:nth-child(5)').on('click', 'a', function(e) {
+	e.preventDefault();
+	$('#share-block').toggleClass('reveal');
+	if ($('.responsive').hasClass('open')) {
+		$('.responsive').removeClass('open');
+	}
+	if ($('.search-form').hasClass('show')) {
+		$('.search-form').removeClass('show');
+	}
+	
+	});	
+	
+	$('.foot-nav ul').on('click', 'li:last-child', function(e) {
+	e.preventDefault();
+	if ($('#share-block').hasClass('reveal')) {
+		$('#share-block').removeClass('reveal');
+	}
+	$('.responsive').toggleClass('open');
+    $('.search-form').toggleClass('show');
+	
 	});	
 	
 if (!$("html").hasClass("ie8")) {
@@ -87,7 +109,7 @@ $('.video-container iframe').each(function(){
 	  var ad = document.getElementById('header-ad');
      ad.appendChild(iframe);
 	
-           var val = '<scr' + 'ipt src=\"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">    googletag.pubads().definePassback(\"\/20893548\/yb\/insidethehall\", [728,90]).setClickUrl(\"%%CLICK_URL_UNESC%%\").display();\r\n<\/script>';
+      var val = '<scr' + 'ipt src=\"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">    googletag.pubads().definePassback(\"\/20893548\/yb\/insidethehall\", [728,90]).setClickUrl(\"%%CLICK_URL_UNESC%%\").display();\r\n<\/script>';
 	
       
       // get a handle on the <iframe>d document (in a cross-browser way)
@@ -153,7 +175,7 @@ $('.video-container iframe').each(function(){
 	 var ad = document.getElementById('left-sidebar-ad');
      ad.appendChild(iframe);
 
-          
+   
      var valm = '<scr' + 'ipt src=\"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">    googletag.pubads().definePassback(\"\/20893548\/yb\/insidethehall\", [160,600]).setClickUrl(\"%%CLICK_URL_UNESC%%\").display();\r\n<\/script>';
      
      
@@ -249,7 +271,7 @@ $('.video-container iframe').each(function(){
           
 
      //var valm = '<scr'+'ipt type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=283639&u=pabozich&width=728&height=90"></sc'+'ript>';
-       var valm = '<script type=\"text\/javascript\" src=\"http:\/\/ap.lijit.com\/www\/delivery\/fpi.js?z=331644&u=pabozich&width=970&height=250\"><\/script>';
+      var valm = '<script type=\"text\/javascript\" src=\"http:\/\/ap.lijit.com\/www\/delivery\/fpi.js?z=331644&u=pabozich&width=970&height=250\"><\/script>';
 
       // get a handle on the <iframe>d document (in a cross-browser way)
       var doc = iframe.contentWindow || iframe.contentDocument;

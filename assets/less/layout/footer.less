@@ -46,6 +46,32 @@ footer {
 	padding-bottom: 5px;
 	z-index: 10;
 	font-size: 12px;
+	display: none;
+	
+	span {
+	
+		display: block;
+		margin-top: -5px;
+        
+	
+	}
+	
+	a.disqus {
+	
+	
+	  &:after {content: " Comments";}
+	  &:before {
+	  
+	  
+      content: url(/wp-content/themes/priller/assets/img/disqus.svg);
+      display: block;
+      cursor: pointer;
+      margin-bottom: -5px;
+	  
+	  
+	  }
+	
+	}
 	
 	
 	ul {
@@ -61,6 +87,8 @@ footer {
 		float: none; 
         margin-right: 0; 
 	    text-align: center;
+	    width: 20%;
+	    align-self: flex-end;
 	    
 	    img {
 	    	
@@ -72,7 +100,6 @@ footer {
 	}	
 	
 	}
-
 
 }
 
@@ -102,6 +129,14 @@ footer {
 			float: left;
 			margin-right: 40px;
 			
+			svg {
+			
+				width: 15px;
+				height: 15px;
+				vertical-align: sub;
+			    padding-right: 5px;
+			}
+			
 			a {
 					
 				color: @col-dlink;
@@ -116,13 +151,13 @@ footer {
 		
 		&:first-child {
 		
-			margin-top: 3px;
+			margin-top: 5px;
 		
 		}
 		
 		&:nth-child(2) {
 		
-			margin-top: 3px;
+			margin-top: 5px;
 			margin-left: -20px;
 		
 		}
@@ -131,7 +166,7 @@ footer {
 		
 			margin-right: 0px;
 			margin-left: -20px;
-			margin-top: 3px;
+			margin-top: 5px;
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -168,17 +203,10 @@ footer {
 			
 			a {
 			
-				    border: 1px solid @col-ccc;
-					    padding: 0px 2px 4px 2px;
-					
-					&:hover {
-						
-							background: @col-ccc;
-							color: #ffffff;
-							text-decoration: none;
-						
-						
-						}
+				    border: 1px solid #4099ff;
+				    color: #4099ff;
+					padding: 4px;
+					display: inline-block;
 			
 			
 			}
@@ -193,17 +221,11 @@ footer {
 			
 			a {
 			
-				    border: 1px solid @col-ccc;
-					    padding: 0px 2px 4px 2px;
+				    border: 1px solid #3b5998;
+				    color: #3b5998;
+					padding: 4px;
+					display: inline-block;
 					
-						&:hover {
-						
-							background: @col-ccc;
-							color: #ffffff;
-							text-decoration: none;
-						
-						
-						}
 			
 			
 			}
@@ -215,6 +237,9 @@ footer {
 
 	}	
 	
+	
 	}
 	
-	
+	#share-block {display: none;}
+	#share-block span {display: block; margin-top: -5px;}
+	.single .foot-nav ul li {align-self: flex-end;}

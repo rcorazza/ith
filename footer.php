@@ -5,12 +5,28 @@
          <li><a class="bubble" href="<?php the_permalink(); ?>#disqus_thread">&nbsp;</a></li>
          <li class="previous"><?php previous_post_link('%link'); ?> </li>
          <li class="next"><?php next_post_link('%link'); ?></li>
-         <li class="twitter"><a class="tweetable" data-user="insidethehall" data-message="<?php echo urlencode(the_title()); ?>" href="#" rel="nofollow" target="_blank"><span style="padding-top: 2px; padding-left: 1px;" class="genericon genericon-twitter"></span></a></li>
-         <li class="facebook"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>"><span style="padding-left: -2px; padding-top: 1px;" class="genericon genericon-facebook-alt"></span></a></li>
+         <li class="twitter"><a class="tweetable" data-user="insidethehall" data-message="<?php echo urlencode(the_title()); ?>" href="#" rel="nofollow" target="_blank"><?php include('wp-content/themes/priller/assets/img/svg/twitter.php'); ?>Tweet</a></li>
+         <li class="facebook"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>"><?php include('wp-content/themes/priller/assets/img/svg/facebook.php'); ?>Share</a></li>
       </ul>
    </div>
 </div>
+<div id="share-block">
+	<ul>
+		<li><a class="tweetable" data-user="insidethehall" data-message="<?php echo urlencode(the_title()); ?>" href="#" rel="nofollow" target="_blank"><?php include('wp-content/themes/priller/assets/img/svg/twitter.php'); ?><span>Share to Twitter</span></a></li>
+		<li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>"><?php include('wp-content/themes/priller/assets/img/svg/facebook.php'); ?><span>Share to Facebook</span></a></li>
+	</ul>
+</div>		
 <?php } ?>
+<nav class="foot-nav">
+	<ul>
+		<li><a href="/"><?php include('wp-content/themes/priller/assets/img/svg/home-foot.php'); ?><span>Home</span></a></li>
+		<li><a href="http://forum.insidethehall.com/forums/3-Inside-the-Hall-Premium-Basketball-Forum"><?php include('wp-content/themes/priller/assets/img/svg/forum-foot.php'); ?><span>Forum</span></a></li>
+		<li><a href="/2015-2016-indiana-basketball-schedule/"><?php include('wp-content/themes/priller/assets/img/svg/schedule-foot.php'); ?><span>Schedule</span></a></li>
+		<li><a class="disqus" href="<?php the_permalink(); ?>#disqus_thread"></a></li>
+		<li><a href="#"><?php include('wp-content/themes/priller/assets/img/svg/share.php'); ?><span>Share</span></a></li>
+		<li><a href="#"><?php include('wp-content/themes/priller/assets/img/svg/menu-foot.php'); ?><span>Menu</span></a></li>
+	</ul>	
+</nav>
 <footer>
    <div class="contain-all">
       <ul>
