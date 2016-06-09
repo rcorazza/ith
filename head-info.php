@@ -69,25 +69,5 @@
     scpt.parentNode.insertBefore(elem, scpt);  
    })();
 </script>
-<!-- Start DFP SETUP -->
-<script type="text/javascript"><!--
-   //<![CDATA[
-   (function() {
-   var useSSL = 'https:' == document.location.protocol;
-   var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
-   document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-   })();
-   //]]>
-   //--></script>
-<script type='text/javascript' src='http://img.bnqt.com/lib/js/sdpdfphelper.js'></script>
-<script type="text/javascript">
-   googletag.pubads().enableSyncRendering();
-   googletag.pubads().setTargeting("title", sdpTargeting.title)
-                     .setTargeting('targetPaths', sdpTargeting.targetPaths)
-                     .setTargeting('fullPath', sdpTargeting.fullPath)
-                     .setTargeting('queryStr', sdpTargeting.queryStr)
-                     .setTargeting('domainName', sdpTargeting.domainName);       
-</script>
-<!-- DFP SETUP end -->
 <script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script>
 
