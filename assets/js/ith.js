@@ -129,26 +129,6 @@ $('.video-container iframe').each(function(){
       }
       doc.close();
 	  
-	 var iframe = document.createElement('iframe');
-	 var ad = document.getElementById('top-ad');
-     ad.appendChild(iframe);
-
-          
-
-     var valm = '<script type=\"text\/javascript\" src=\"http:\/\/ap.lijit.com\/www\/delivery\/fpi.js?z=214471&u=pabozich&width=300&height=250\"><\/script>';
-
-     
-      
-      // get a handle on the <iframe>d document (in a cross-browser way)
-      var doc = iframe.contentWindow || iframe.contentDocument;
-      if (doc.document) {
-        doc = doc.document;
-      }
-
-      // open, write content to, and close the document
-      doc.open();
-      doc.write(valm);
-      doc.close();
 	  
 	  var iframe = document.createElement('iframe');
 	 var ad = document.getElementById('bottom-ad');
@@ -264,26 +244,6 @@ $('.video-container iframe').each(function(){
       doc.write(valm);
       doc.close();
       
-       var iframe = document.createElement('iframe');
-	 var ad = document.getElementById('footer-ad');
-     ad.appendChild(iframe);
-
-          
-
-     //var valm = '<scr'+'ipt type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=283639&u=pabozich&width=728&height=90"></sc'+'ript>';
-      var valm = '<script type=\"text\/javascript\" src=\"http:\/\/ap.lijit.com\/www\/delivery\/fpi.js?z=331644&u=pabozich&width=970&height=250\"><\/script>';
-
-      // get a handle on the <iframe>d document (in a cross-browser way)
-      var doc = iframe.contentWindow || iframe.contentDocument;
-      if (doc.document) {
-        doc = doc.document;
-      }
-
-      // open, write content to, and close the document
-      doc.open();
-      doc.write(valm);
-      doc.close();
-
 }
 
 $('.hang').on('click', 'img', function() {

@@ -40,8 +40,6 @@
          <li><a href="http://twitter.com/insidethehall" target="_blank">Twitter</a></li>
          <li><a href="https://www.youtube.com/user/insidethehallvideo" target="_blank">YouTube</a></li>
       </ul>
-      <div id="footer-ad">
-      </div>
    </div>
 </footer>
 <?php wp_footer(); ?>

@@ -37,11 +37,13 @@
         <?php 
             if (!is_home('') &&  !is_mobile() && !is_tablet()) {
             dynamic_sidebar('latest');
+            }	
+            ?>	
+            <?php 
+            if (!is_mobile() && !is_tablet()) {
             echo '<div class="rpwe-block new" style="clear: both;"><ul><div id="nativoRR"></div></ul></div>';
             }	
-            ?>		
-        <div id="top-ad">
-        </div>
+            ?>	
         <div id="bottom-ad">
         </div>
         <div id="adsense">
