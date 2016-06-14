@@ -312,7 +312,7 @@ footer ul li:last-child {
   margin-top: -5px;
 }
 .foot-nav a.disqus:after {
-  content: " Comments";
+  content: "";
 }
 .foot-nav a.disqus:before {
   content: url(/wp-content/themes/priller/assets/img/disqus.svg);
@@ -1445,6 +1445,9 @@ iframe {
   }
 }
 @media all and (max-width: 575px) {
+  header .logo img {
+    float: none;
+  }
   .foot-nav {
     display: block;
   }
@@ -1525,9 +1528,6 @@ iframe {
   .contain-all.main .left-rail .post ul:not(.post-categories):not(.time):not(.author-share) {
     width: 92%;
     margin: 0 auto;
-  }
-  .contain-all.main header .logo img {
-    float: none;
   }
   .contain-all.main .underground {
     margin-bottom: 15px;
