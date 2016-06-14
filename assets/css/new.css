@@ -1077,7 +1077,11 @@ footer ul li:last-child {
 .left-rail .underground {
   margin: 0px auto 15px auto;
 }
-.top_content {
+.right-rail .for-scroll,
+.right-rail .inner-scroll {
+  margin-bottom: 0px;
+}
+.right-rail .top_content {
   margin-bottom: 20px;
 }
 .category .rpwe-block.new,
