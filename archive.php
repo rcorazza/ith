@@ -20,19 +20,7 @@
 			<?php $count = 0; ?>
 			<?php while (have_posts()) : the_post(); ?>
 			<?php $count++; ?>
-            <?php if ($count == 2 || $count == 4 || $count == 6 ||  $count == 9 ||  $count == 10) {
-     		
-     		get_template_part('small-post');
- 			
- 			}
- 
- 			else {
- 
-		  get_template_part( 'main-post' ); 
- 			
- 			}
- 
- 			?>
+            <?php get_template_part('small-post'); ?>
                 <?php if( $wp_query->current_post == 0 ) { 
                 if( is_mobile()) { 
                 dynamic_sidebar('top content'); 

@@ -1004,6 +1004,9 @@ footer ul li:last-child {
 .widget.forum-tease p a {
   color: #7d7d7d;
 }
+.widget .widget_recent_entries {
+  margin-bottom: 20px;
+}
 .widget .widget_recent_entries h2 {
   padding-right: 25px;
   margin-bottom: 15px;
@@ -1073,6 +1076,16 @@ footer ul li:last-child {
 }
 .left-rail .underground {
   margin: 0px auto 15px auto;
+}
+.top_content {
+  margin-bottom: 20px;
+}
+.category .rpwe-block.new,
+.tag .rpwe-block.new,
+.single .rpwe-block.new,
+.right-rail .connatix,
+.right-rail #nativoRR {
+  margin-bottom: 20px;
 }
 .genericon {
   font-size: 16px;

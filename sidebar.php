@@ -1,12 +1,14 @@
 <aside class="right-rail">
-    <div class="inner">
+    <div class="inner">	
+    	<?php 
+            if (!is_mobile() && !is_tablet() && is_single() || !is_mobile() && !is_tablet() && is_archive()) {
+            echo '<div class="rpwe-block new" style="clear: both;"><ul><div id="nativoRR"></div></ul></div>';
+            }	
+            ?>
         <?php 
             if (is_home('') && !is_mobile() && !is_tablet() ) {
              dynamic_sidebar('top content');
-            }	
-            if (is_archive('') && !is_mobile() && !is_tablet() ) {
-             dynamic_sidebar('top content');
-            }	
+            }		
             if (is_page_template('player.php')&& !is_mobile() && !is_tablet() ) {
              dynamic_sidebar('roster'); 
             }
@@ -40,7 +42,7 @@
             }	
             ?>	
             <?php 
-            if (!is_mobile() && !is_tablet()) {
+            if (!is_mobile() && !is_tablet() && is_home()) {
             echo '<div class="rpwe-block new" style="clear: both;"><ul><div id="nativoRR"></div></ul></div>';
             }	
             ?>	
