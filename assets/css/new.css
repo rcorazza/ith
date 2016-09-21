@@ -513,10 +513,14 @@ footer ul li:last-child {
 .left-rail .post .recruit-wrap {
   border-top: 1px solid #efefef;
 }
+.left-rail .post .recruit-wrap div {
+  padding-top: 16px;
+}
 .left-rail .post .filed {
   border-top: 1px solid #efefef;
   padding-top: 10px;
   font-size: 12px;
+  margin-bottom: 0px;
 }
 .left-rail .post .filed a {
   color: #7d7d7d;
@@ -1088,9 +1092,14 @@ footer ul li:last-child {
 .category .rpwe-block.new,
 .tag .rpwe-block.new,
 .single .rpwe-block.new,
+.search .rpwe-block.new,
 .right-rail .connatix,
 .right-rail #nativoRR {
   margin-bottom: 20px;
+}
+.single .post.small.connatix {
+  max-width: 640px;
+  margin: 0px auto 20px auto;
 }
 .genericon {
   font-size: 16px;
@@ -1515,6 +1524,10 @@ iframe {
   }
   nav.responsive ul li:last-child {
     margin-bottom: 0px;
+  }
+  .page-template-recruit .contain-all.main .left-rail .post h2 {
+    width: auto;
+    max-width: 92%;
   }
   .contain-all.main {
     width: 100%;

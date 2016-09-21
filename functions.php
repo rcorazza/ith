@@ -123,12 +123,14 @@ function my_deregister_scripts(){
 add_action( 'wp_footer', 'my_deregister_scripts' );
 
 add_filter( 'the_content', 'img_p_class_content_filter' ,20);
+
 function img_p_class_content_filter($content) {
     // assuming you have created a page/post entitled 'debug'
     $content = preg_replace("/(<p)(>[^<]*<img[^>]+>[^<]*)(<\/p>)/i", "\$1 class='content-img-wrap'\$2\$3", $content);
 
     return $content;
 }
+
 // Override the calculated image sizes
 add_filter( 'wp_calculate_image_sizes', '__return_false',  PHP_INT_MAX );
 

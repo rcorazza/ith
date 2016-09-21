@@ -214,13 +214,14 @@ $('.video-container iframe').each(function(){
       doc.write(valm);
       doc.close();
       
-      var iframe = document.createElement('iframe');
+     var iframe = document.createElement('iframe');
 	 var ad = document.getElementById('stream-two');
      ad.appendChild(iframe);
 
           
      var valm = '<scr'+'ipt type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=131889&u=pabozich&width=300&height=250"></sc'+'ript>';
-    
+     var valz = '<scr'+'ipt type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=131888&u=pabozich&width=300&height=250"></sc'+'ript>';
+      
       
       // get a handle on the <iframe>d document (in a cross-browser way)
       var doc = iframe.contentWindow || iframe.contentDocument;
@@ -230,20 +231,13 @@ $('.video-container iframe').each(function(){
 
       // open, write content to, and close the document
       doc.open();
+     if (width >= 728) {
       doc.write(valm);
-      doc.close();
-     
-	   // get a handle on the <iframe>d document (in a cross-browser way)
-      var doc = iframe.contentWindow || iframe.contentDocument;
-      if (doc.document) {
-        doc = doc.document;
       }
-
-      // open, write content to, and close the document
-      doc.open();
-      doc.write(valm);
-      doc.close();
-      
+      else {
+      doc.write(valz);
+      }
+      doc.close();      
 }
 
 $('.hang').on('click', 'img', function() {

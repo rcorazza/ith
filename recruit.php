@@ -46,8 +46,8 @@
                         }
                         ?>
                 </p>
-                <p style="float: left;"><strong>Class of <?php echo $class; ?></strong></p>
-                <p style="float: right;"><strong>247 Composite Ranking:</strong> <?php echo $composite; ?></p>
+                <p class="class"><strong>Class of <?php echo $class; ?></strong></p>
+                <p class="composite"><strong>247 Composite Ranking:</strong> <?php echo $composite; ?></p>
                 <div style="clear: both;"></div>
                 <div class="entry player">
                     <?php
