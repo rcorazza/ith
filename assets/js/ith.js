@@ -1,6 +1,49 @@
 
 $(document).ready(function(){
- 
+
+
+		if ($(window).width() > 763) {
+	    $('.header-ad').attr('style', 'display: block !important'); 
+	    }
+	    else {
+	    $('.header-ad').attr('style', 'display: none !important'); 	
+	    }
+	
+
+	if ($(window).width() < 576) {
+	    $('<div id="nativomiddle"></div>').insertAfter('.single p.featured');
+	}
+
+	if ($(window).width() >= 728) {
+	$("<script type='text/javascript'>\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\ngads.type = 'text/javascript';\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') + \n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n</script>").appendTo('#div-gpt-ad-insidethehall-72890');
+	$("<script type='text/javascript'>\n    googletag.cmd.push(function() {\n      googletag.defineSlot('/8484/yb/insidethehall', [728, 90],'div-gpt-ad-insidethehall-72890')\n        .addService(googletag.pubads());\n      googletag.enableServices();\n      googletag.display('div-gpt-ad-insidethehall-72890');\n  });\n  </script>\n").appendTo('#div-gpt-ad-insidethehall-72890');	
+	}
+
+	else {
+
+	}
+
+	if ($(window).width() >= 728) {
+	 $("<script type='text/javascript'>\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\ngads.type = 'text/javascript';\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') + \n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n</script>").appendTo('#div-gpt-ad-insidethehall-300600');
+	 $("<script type='text/javascript'>\n    googletag.cmd.push(function() {\n      googletag.defineSlot('/8484/yb/insidethehall', [[300, 250], [300, 600]],'div-gpt-ad-insidethehall-300600')\n        .addService(googletag.pubads());\n      googletag.enableServices();\n      googletag.display('div-gpt-ad-insidethehall-300600');\n  });\n  </script>").appendTo('#div-gpt-ad-insidethehall-300600');
+     $("<script type='text/javascript'>\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\ngads.type = 'text/javascript';\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') + \n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n</script>").appendTo('#div-gpt-ad-insidethehall-300600');
+	 $("<script type='text/javascript'>\n    googletag.cmd.push(function() {\n      googletag.defineSlot('/8484/yb/insidethehall', [300, 250],'div-gpt-ad-insidethehall-300250')\n        .addService(googletag.pubads());\n      googletag.enableServices();\n      googletag.display('div-gpt-ad-insidethehall-300250');\n  });\n  </script>").appendTo('#div-gpt-ad-insidethehall-300250');
+
+
+	}
+
+
+	//$("<script type='text/javascript'>\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\ngads.type = 'text/javascript';\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') + \n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n</script>").appendTo('#div-gpt-ad-insidethehall-300600');
+	//$("<script type='text/javascript'>\n    googletag.cmd.push(function() {\n      googletag.defineSlot('/8484/yb/insidethehall', [[300, 250], [300, 600]],'div-gpt-ad-insidethehall-300600')\n        .addService(googletag.pubads());\n      googletag.enableServices();\n      googletag.display('div-gpt-ad-insidethehall-300600');\n  });\n  </script>").appendTo('#div-gpt-ad-insidethehall-300600');
+
+	//$("<script type='text/javascript'>\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\ngads.type = 'text/javascript';\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') + \n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n</script>").appendTo('#div-gpt-ad-insidethehall-300600');
+	//$("<script type='text/javascript'>\n    googletag.cmd.push(function() {\n      googletag.defineSlot('/8484/yb/insidethehall', [300, 250],'div-gpt-ad-insidethehall-300250')\n        .addService(googletag.pubads());\n      googletag.enableServices();\n      googletag.display('div-gpt-ad-insidethehall-300250');\n  });\n  </script>").appendTo('#div-gpt-ad-insidethehall-300250');
+
+
+if ($(window).width() > 1024) {
+ $('<ul><div id="nativoRR"></div></ul>').insertAfter('.top_content ul:first-child, .latest ul:first-child');
+} 
+
  $(".single .fixed-footer a, .single .foot-nav ul li:nth-child(4)").on('click', function(e) {
 	e.preventDefault();
     $('html, body').animate({
@@ -105,14 +148,60 @@ $('.video-container iframe').each(function(){
   
   if (!$("html").hasClass("ie8") && !$("html").hasClass("ie9"))  {
     
-	 var iframe = document.createElement('iframe');
-	  var ad = document.getElementById('header-ad');
-     ad.appendChild(iframe);
+	// var iframe = document.createElement('iframe');
+	// var ad = document.getElementById('div-gpt-ad-insidethehall-72890');
+    // ad.appendChild(iframe);
 	
-      var val = '<scr' + 'ipt src=\"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">    googletag.pubads().definePassback(\"\/20893548\/yb\/insidethehall\", [728,90]).setClickUrl(\"%%CLICK_URL_UNESC%%\").display();\r\n<\/script>';
-	
+
+	//  var head = "<script type='text/javascript'>\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\ngads.type = 'text/javascript';\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') + \n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n</script>";
+    //  var ybTop = "<script type='text/javascript'>\n    googletag.cmd.push(function() {\n      googletag.defineSlot('/8484/yb/insidethehall', [728, 90],'div-gpt-ad-insidethehall-72890')\n        .addService(googletag.pubads());\n      googletag.enableServices();\n      googletag.display('div-gpt-ad-insidethehall-72890');\n  });\n  </script>\n";
       
       // get a handle on the <iframe>d document (in a cross-browser way)
+    //  var doc = iframe.contentWindow || iframe.contentDocument;
+    //  if (doc.document) {
+    //    doc = doc.document;
+    //  }
+
+      // open, write content to, and close the document
+    //  doc.open();
+      var width = window.innerWidth || document.documentElement.clientWidth;
+	//if (width >= 728) {
+	//  doc.write(head);
+   //   doc.write(ybTop);
+   //   }
+   //   else {
+      
+     // }
+     // doc.close();
+	  
+	  
+	 // var iframe = document.createElement('iframe');
+	// var ad = document.getElementById('bottom-ad');
+    // ad.appendChild(iframe);
+
+          
+    // var valm = '<scr' + 'ipt src=\"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">    googletag.pubads().definePassback(\"\/20893548\/yb\/insidethehall\", [300,250]).setClickUrl(\"%%CLICK_URL_UNESC%%\").display();\r\n<\/script>';
+     
+
+      
+      // get a handle on the <iframe>d document (in a cross-browser way)
+    //  var doc = iframe.contentWindow || iframe.contentDocument;
+    //  if (doc.document) {
+    //    doc = doc.document;
+    //  }
+
+      // open, write content to, and close the document
+    //  doc.open();
+    //  doc.write(valm);
+    //  doc.close();
+
+     var iframe = document.createElement('iframe');
+	 var ad = document.getElementById('div-gpt-ad-insidethehall-300600');
+     ad.appendChild(iframe);
+
+     var valu = '<scr'+'ipt type="text/javascript" src="//ap.lijit.com/www/delivery/fpi.js?z=453201&width=300&height=250"></sc'+'ript>';
+
+       // get a handle on the <iframe>d document (in a cross-browser way)
       var doc = iframe.contentWindow || iframe.contentDocument;
       if (doc.document) {
         doc = doc.document;
@@ -120,26 +209,22 @@ $('.video-container iframe').each(function(){
 
       // open, write content to, and close the document
       doc.open();
-      var width = window.innerWidth || document.documentElement.clientWidth;
-	if (width >= 728) {
-      doc.write(val);
+      if (width > 768) {
+      
       }
       else {
-      
+      doc.write(valu);
       }
       doc.close();
-	  
-	  
-	  var iframe = document.createElement('iframe');
-	 var ad = document.getElementById('bottom-ad');
+
+
+      var iframe = document.createElement('iframe');
+	 var ad = document.getElementById('div-gpt-ad-insidethehall-300250');
      ad.appendChild(iframe);
 
-          
-     var valm = '<scr' + 'ipt src=\"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">    googletag.pubads().definePassback(\"\/20893548\/yb\/insidethehall\", [300,250]).setClickUrl(\"%%CLICK_URL_UNESC%%\").display();\r\n<\/script>';
-     
+     var valz = '<scr'+'ipt type="text/javascript" src="//ap.lijit.com/www/delivery/fpi.js?z=453202&width=300&height=250"></sc'+'ript>';
 
-      
-      // get a handle on the <iframe>d document (in a cross-browser way)
+       // get a handle on the <iframe>d document (in a cross-browser way)
       var doc = iframe.contentWindow || iframe.contentDocument;
       if (doc.document) {
         doc = doc.document;
@@ -147,58 +232,25 @@ $('.video-container iframe').each(function(){
 
       // open, write content to, and close the document
       doc.open();
-      doc.write(valm);
-      doc.close();
-	  
-	   
-       var iframe = document.createElement('iframe');
-	 var ad = document.getElementById('left-sidebar-ad');
-     ad.appendChild(iframe);
-
-   
-     var valm = '<scr' + 'ipt src=\"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">    googletag.pubads().definePassback(\"\/20893548\/yb\/insidethehall\", [160,600]).setClickUrl(\"%%CLICK_URL_UNESC%%\").display();\r\n<\/script>';
-     
-     
-     
-   
+      if (width > 768) {
       
-      // get a handle on the <iframe>d document (in a cross-browser way)
-      var doc = iframe.contentWindow || iframe.contentDocument;
-      if (doc.document) {
-        doc = doc.document;
       }
-
-      // open, write content to, and close the document
-      doc.open();
-      doc.write(valm);
-      doc.close();
-      
-        var iframe = document.createElement('iframe');
-	 var ad = document.getElementById('right-sidebar-ad');
-     ad.appendChild(iframe);
-
-          
-     var valm = '<scr'+'ipt type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=283638&u=pabozich&width=160&height=600"></sc'+'ript>';
-     
-	 // get a handle on the <iframe>d document (in a cross-browser way)
-      var doc = iframe.contentWindow || iframe.contentDocument;
-      if (doc.document) {
-        doc = doc.document;
+      else {
+      doc.write(valz);
       }
-
-      // open, write content to, and close the document
-      doc.open();
-      doc.write(valm);
       doc.close();
+
+
 	  
-	  
-	    	 var iframe = document.createElement('iframe');
+	
+	 var iframe = document.createElement('iframe');
 	 var ad = document.getElementById('stream-one');
      ad.appendChild(iframe);
 
           
 
      var valm = '<scr'+'ipt type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=330052&u=pabozich&width=300&height=250"></sc'+'ript>';
+     var valMobile = '<scr'+'ipt type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=403821&u=pabozich&width=300&height=250"></sc'+'ript>';
 
      
    
@@ -211,7 +263,12 @@ $('.video-container iframe').each(function(){
 
       // open, write content to, and close the document
       doc.open();
+      if (width > 768) {
       doc.write(valm);
+      }
+      else {
+      doc.write(valMobile);
+      }
       doc.close();
       
      var iframe = document.createElement('iframe');
@@ -231,14 +288,21 @@ $('.video-container iframe').each(function(){
 
       // open, write content to, and close the document
       doc.open();
-     if (width >= 728) {
+     if (width > 768) {
       doc.write(valm);
       }
       else {
       doc.write(valz);
       }
-      doc.close();      
+      doc.close();    
 }
+
+if ($('#adsense').is(':visible')) {
+	ga('send', 'event', 'AdBlocker', 'false', 'adblockFalse');
+	}
+	else {
+	ga('send', 'event', 'AdBlocker', 'true', 'adblockTrue');
+	}
 
 $('.hang').on('click', 'img', function() {
 	 ga('send', 'event', 'link', 'click', 'main logo');

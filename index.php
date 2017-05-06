@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+  if (function_exists('get_header')) {
+    get_header();
+  } else {
+    die();
+  }
+?>
 <section class="contain-all main">
     <section class="left-rail">
         <div class="inner">
@@ -33,14 +39,14 @@
                 dynamic_sidebar('top content'); 
                 } 
                 else if ( !is_mobile() || !is_tablet() ) { 
+                echo '<div id="nativoaboveHP"></div>';    
                 dynamic_sidebar('underground');
                 dynamic_sidebar('forum teaser'); 
-				echo '<div id="nativoaboveHP"></div>';
                 }
                 else if (is_tablet()) { 
+                echo '<div id="nativoaboveHP"></div>';    
                 dynamic_sidebar('underground');
                 dynamic_sidebar('top content'); 
-				echo '<div id="nativoaboveHP"></div>';
                 } 
                 } ?>          
             <?php if( $wp_query->current_post == 1) { 

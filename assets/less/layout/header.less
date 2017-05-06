@@ -51,10 +51,17 @@ header {
 		
 	}
 	
-#header-ad {
+.header-ad {
 
-	margin-top: 10px;
-	float: right;
+	margin: 100px 0px 20px 0px;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+
+
+	@media all and (max-width: 763px) {
+		display: none;
+	}
 
 }
 
@@ -63,7 +70,7 @@ header {
 			ul {
 			
 				float: right;
-				margin: 10px 0px;
+				margin: 27px 0px;
 				font-family: @font-serif;
 			
 				li {
@@ -215,7 +222,7 @@ header {
 		
 		.search-field {
 		
-			border: 1px solid #7d7d7d;
+			border: 1px solid #cccccc;
 			padding: 10px;
 		
 		}
@@ -242,7 +249,7 @@ header {
 		&.show {
 		
 			
-			top: 43px;
+			top: 76px;
 			
 		
 		}

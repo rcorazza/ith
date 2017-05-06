@@ -15,15 +15,15 @@
             <header>
                <div class="contain-all">
                   <ul class="logo">
-                     <li><a href="/"><img width="13px" src="/wp-content/themes/priller/assets/img/state.jpg">Inside The Hall</a></li>
-                  	<li class="svg-mobile"><a href="/"><img src="/wp-content/themes/priller/assets/img/svg/logo-svg-mobile.svg"></a></li -->
+                     <li><a href="/"><img src="/wp-content/themes/priller/assets/img/svg/logo-svg-mobile.svg"></a></li>
+                  	<li class="svg-mobile"><a href="/"><img src="/wp-content/themes/priller/assets/img/svg/logo-svg-mobile.svg"></a></li>
                   </ul>
                   <nav class="main">
                      <ul>
                         <li><a href="http://forum.insidethehall.com/forums/3-Inside-the-Hall-Premium-Basketball-Forum">Forum</a></li>
-                        <li><a href="/2015-2016-indiana-basketball-schedule/">Schedule</a></li>
-                        <li><a href="/2015-2016-indiana-basketball-roster/">Roster</a></li>
-                        <li><a href="/2016-indiana-basketball-recruiting-board/">'16 <span class="board">Recruiting Board</span></a></li>
+                        <li><a href="/2016-2017-indiana-basketball-schedule/">Schedule</a></li>
+                        <li><a href="/2016-2017-indiana-basketball-roster/">Roster</a></li>
+                        <li style="display: none;"><a href="/2016-indiana-basketball-recruiting-board/">'16 <span class="board">Recruiting Board</span></a></li>
                         <li><a href="/2017-indiana-basketball-recruiting-board/">'17 <span class="board">Recruiting Board</span></a></li>
                         <li><a href="/category/recruiting/">Recruiting</a></li>
                         <li><a href="/indiana-scholarship-numbers/">Scholarships</a></li>
@@ -37,13 +37,12 @@
                </div>
             </header>
             <div class="contain-all buffer">
-               <div class="hang">
+               <!-- div class="hang">
                   <a href="/">
                   <img width="130px" src="/wp-content/themes/priller/assets/img/ith-logo.jpg">
                   </a>
-               </div>
+               </div -->
                <?php get_search_form(); ?>
                <?php get_template_part('nav'); ?>
-               <div id="header-ad">
-               </div>
+               <div class="header-ad" id="div-gpt-ad-insidethehall-72890"></div>
             </div>

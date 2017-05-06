@@ -1,7 +1,10 @@
 <?php
-   /** The template for displaying 404 pages (Not Found) **/
-   
-   get_header(); ?>
+  if (function_exists('get_header')) {
+    get_header();
+  } else {
+    die();
+  }
+?>
 <div class="full-wrap">
 <section>
 <div class="single main contain-all">

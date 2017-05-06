@@ -128,13 +128,20 @@ header:after {
   display: table;
   clear: both;
 }
-#header-ad {
-  margin-top: 10px;
-  float: right;
+.header-ad {
+  margin: 100px 0px 20px 0px;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 20px;
+}
+@media all and (max-width: 763px) {
+  .header-ad {
+    display: none;
+  }
 }
 nav ul {
   float: right;
-  margin: 10px 0px;
+  margin: 27px 0px;
   font-family: 'Vollkorn', serif;
 }
 nav ul li {
@@ -243,7 +250,7 @@ nav.responsive.open {
   z-index: 5;
 }
 .search-form .search-field {
-  border: 1px solid #7d7d7d;
+  border: 1px solid #cccccc;
   padding: 10px;
 }
 .search-form .search-submit {
@@ -260,7 +267,7 @@ nav.responsive.open {
   color: #ffffff;
 }
 .search-form.show {
-  top: 43px;
+  top: 76px;
 }
 .slideDown {
   -webkit-transform: translateY(0);
@@ -724,6 +731,56 @@ footer ul li:last-child {
 .home .left-rail .post .author-share {
   margin-top: -5px;
 }
+.read-forum,
+.read-ith {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px 0px;
+  max-width: 640px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.read-forum img,
+.read-ith img {
+  float: left;
+  padding-right: 20px;
+}
+@media all and (max-width: 575px) {
+  .read-forum img,
+  .read-ith img {
+    display: none;
+  }
+}
+.read-forum p,
+.read-ith p {
+  max-width: 92% !important;
+  margin: 16px auto;
+  text-align: left !important;
+}
+.read-forum p.button,
+.read-ith p.button {
+  margin: 20px auto 0px auto !important;
+}
+.read-forum h4,
+.read-ith h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Volkorn', serif;
+  color: #6b030b;
+  max-width: 92%;
+  margin: 0 auto;
+}
+.read-btn {
+  border: 1px solid #6b030b;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+@media all and (max-width: 575px) {
+  .read-ith img {
+    display: block;
+  }
+}
 .right-rail {
   width: 30%;
   float: right;
@@ -755,7 +812,6 @@ footer ul li:last-child {
 }
 .right-rail .forum-tease.widget h2 {
   text-align: right;
-  border-bottom: 1px solid #cccccc;
 }
 .right-rail .widget_recent_entries h2 {
   padding-right: 25px;
@@ -763,6 +819,9 @@ footer ul li:last-child {
 }
 .right-rail div {
   margin-bottom: 60px;
+}
+.right-rail #nativoRR + div {
+  margin-bottom: 0px;
 }
 .right-rail .glyphicons {
   float: right;
@@ -788,7 +847,6 @@ footer ul li:last-child {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
-  border-bottom: 1px solid #cccccc;
   color: #000000;
   text-align: right;
   padding-bottom: 10px;
@@ -1013,7 +1071,6 @@ footer ul li:last-child {
 }
 .widget .widget_recent_entries h2 {
   padding-right: 25px;
-  margin-bottom: 15px;
 }
 .widget .glyphicons {
   float: right;
@@ -1021,11 +1078,18 @@ footer ul li:last-child {
 }
 .widget .glyphicons:before {
   font-size: 21px;
+  right: 0px;
+  margin: 0px 0px 0px 0px;
+  right: -5px;
 }
 .widget .glyphicons.refresh:before {
   font-size: 17px;
   padding-top: 1px;
   padding-left: 6px;
+}
+.widget .glyphicons.retweet:before {
+  font-size: 19px;
+  padding-top: 1px;
 }
 .widget .post p {
   text-align: left;
@@ -1039,13 +1103,16 @@ footer ul li:last-child {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
-  border-bottom: 1px solid #cccccc;
   color: #000000;
   text-align: right;
   padding-bottom: 10px;
   margin-top: 5px;
-  padding-right: 33px;
+  padding-right: 28px;
   font-weight: bold;
+}
+.widget h2.ntv-title {
+  text-transform: none;
+  padding-bottom: 0px;
 }
 .widget h2 a {
   font-weight: bold;
@@ -1056,6 +1123,7 @@ footer ul li:last-child {
 .widget ul li a {
   font-weight: bold;
   color: #6b0b03;
+  text-shadow: none !important;
 }
 .widget ul li:nth-child(2) {
   margin-bottom: 20px;
@@ -1086,9 +1154,6 @@ footer ul li:last-child {
 .right-rail .snap {
   margin-bottom: 0px;
 }
-.right-rail .top_content {
-  margin-bottom: 20px;
-}
 .category .rpwe-block.new,
 .tag .rpwe-block.new,
 .single .rpwe-block.new,
@@ -1100,6 +1165,30 @@ footer ul li:last-child {
 .single .post.small.connatix {
   max-width: 640px;
   margin: 0px auto 20px auto;
+}
+.right-rail .ntv.post.small .author-share li a {
+  color: #000000;
+}
+.right-rail .ntv.post.small .author-share li a span {
+  color: #6b030b !important;
+}
+.prx_viewable + div {
+  color: #000000 !important;
+}
+.rpwe-li .ntv-preview-img-wrapper a {
+  width: 100%;
+  display: block;
+  background-color: #6b030b;
+  color: #ffffff !important;
+}
+.left-rail .ntv-disclaimer {
+  font-size: 10px;
+}
+.left-rail #ntvtitle {
+  font-size: 12px;
+}
+.left-rail #ntv-author {
+  font-size: 10px;
 }
 .genericon {
   font-size: 16px;
@@ -1334,7 +1423,7 @@ iframe {
     float: none;
   }
   .contain-all.main {
-    margin-top: 20px;
+    margin-top: 61px;
   }
   header .search-form {
     right: 30px;

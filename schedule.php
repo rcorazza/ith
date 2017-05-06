@@ -12,9 +12,9 @@
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
             <?php endif; ?>
             <div class="bottom">
+                <div id="nativobelow"></div>
                 <?php	
                     if (is_mobile() || is_tablet() ) {
-                    	dynamic_sidebar('schedule'); 
                     	dynamic_sidebar('latest');
                     }
                     else {

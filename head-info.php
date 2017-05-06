@@ -6,8 +6,10 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Vollkorn|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 <link href='/wp-content/themes/priller/assets/css/main.css' rel='stylesheet' type='text/css'>
 <link href='/wp-content/themes/priller/assets/css/new.css' rel='stylesheet' type='text/css'>
+
 <?php wp_head(); ?>
 <title>
    <?php // WordPress custom title script
@@ -69,5 +71,6 @@
     scpt.parentNode.insertBefore(elem, scpt);  
    })();
 </script>
-<script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script>
+<!-- script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script -->
+
 

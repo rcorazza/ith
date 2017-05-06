@@ -67,27 +67,36 @@
 <noscript>
    <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035208&cv=2.0&cj=1" />
 </noscript>
+<script type="text/javascript">
+if ( $(window).width() > 1024) {
+var script = document.createElement('script');
+script.src = '//tags.us.onscroll.com/4db0fd84-3394-4194-a899-93a499becd03/tag.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('body')[0].appendChild(script);
+}
+</script>
 <!-- End comScore Tag -->
-<script type="text/javascript"> jQuery(document).ready(checkAds()); function checkAds(){if (document.getElementById('adsense')!=undefined){document.write("<script>ga(['send', 'Adblock', 'Unblocked', 'false',,true]);</sc" + "ript>");}else{document.write("<script>ga(['send', 'Adblock', 'Blocked', 'true',,true]);</sc" + "ript>");}} </script>	
 <?php if ( is_single()) {  ?>
+<script async="true" src="//a.teads.tv/page/44713/tag"></script>
+<?php } ?>
+<?php if ( is_home()) {  ?>
 <script type="text/javascript">
 window._ttf = window._ttf || [];
 _ttf.push({
-       pid          : 49927
-       ,lang        : "en"
-       ,slot        : '.inner .post > p'
-       ,format      : "inread"
-       ,minSlot     : 3
-       ,components  : { skip: {delay : 0}}
-       ,css         : "margin: 16px 39.9531px;"
+      pid          : 61794
+      ,lang        : "en"
+      ,slot        : ".contain-all.main"
+      ,minSlot     : 1
+      ,before      : true
+      ,format      : "inboard"
+      ,css         : "margin: 20px auto; max-width: 728px;"
 });
-
 (function (d) {
-        var js, s = d.getElementsByTagName('script')[0];
-        js = d.createElement('script');
-        js.async = true;
-        js.src = '//cdn.teads.tv/media/format.js';
-        s.parentNode.insertBefore(js, s);
+       var js, s = d.getElementsByTagName('script')[0];
+       js = d.createElement('script');
+       js.async = true;
+       js.src = '//cdn.teads.tv/media/format.js';
+       s.parentNode.insertBefore(js, s);
 })(window.document);
 </script>
 <?php } ?>

@@ -71,7 +71,7 @@
 			h2 {
 			
 			    padding-right: 25px;
-				margin-bottom: 15px;
+				//margin-bottom: 15px;
 			
 			}
 		
@@ -92,6 +92,9 @@
 		&:before {
 		
 			font-size: 21px;
+			right: 0px;
+			margin: 0px 0px 0px 0px;
+			right: -5px;
 		}
 		
 		&.refresh:before {
@@ -99,6 +102,13 @@
 			font-size: 17px;
 			padding-top: 1px;
 			padding-left: 6px;
+		
+		}
+
+		&.retweet:before {
+		
+			font-size: 19px;
+			padding-top: 1px;
 		
 		}
 		
@@ -130,15 +140,19 @@
 				font-family: @font-sans;
 				font-size: 15px;
 				text-transform: uppercase;
-				border-bottom: 1px solid @col-ccc;
+				//border-bottom: 1px solid @col-ccc;
 				color: #000000;
 				text-align: right;
 				padding-bottom: 10px;
 				margin-top: 5px;
-				padding-right: 33px;
+				padding-right: 28px;
 				font-weight: bold;
 				
-				
+				&.ntv-title {
+					text-transform: none;
+					padding-bottom: 0px;
+				}
+
 				a {
 				
 					font-weight: bold;
@@ -158,6 +172,7 @@
 					
 						font-weight: bold;
 						color: @col-crimson;
+						text-shadow: none !important;
 					
 					}
 					
@@ -196,6 +211,13 @@
 	
 	.left-rail .underground {margin: 0px auto 15px auto;}
 	.right-rail .for-scroll, .right-rail .inner-scroll, .right-rail .snap {margin-bottom: 0px;}
-	.right-rail .top_content {margin-bottom: 20px;}
 	.category .rpwe-block.new, .tag .rpwe-block.new, .single .rpwe-block.new, .search .rpwe-block.new, .right-rail .connatix, .right-rail #nativoRR {margin-bottom: 20px;}
 	.single .post.small.connatix {max-width: 640px; margin: 0px auto 20px auto;}
+
+	.right-rail .ntv.post.small .author-share li a {color: #000000;}
+	.right-rail .ntv.post.small .author-share li a span {color: #6b030b !important;}
+	.prx_viewable + div {color: #000000 !important;}
+	.rpwe-li .ntv-preview-img-wrapper a {width: 100%; display: block; background-color: #6b030b; color: #ffffff !important;}
+	.left-rail .ntv-disclaimer {font-size: 10px;}
+	.left-rail #ntvtitle {font-size: 12px;}
+	.left-rail #ntv-author {font-size: 10px;}

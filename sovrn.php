@@ -1,5 +1,5 @@
-<?php /* Template Name: Roster  */ get_header(); ?>
-<section class="single main roster contain-all">
+<?php /* Template Name: Sovrn Page */ get_header(); ?>
+<section class="single main contain-all">
     <section class="left-rail">
         <div class="inner">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -13,23 +13,14 @@
             <?php endif; ?>
             <div class="bottom">
                 <div id="nativobelow"></div>
-                <?php	
-                    if (is_mobile() || is_tablet() ) {
-                    	dynamic_sidebar('latest');
-                    }
-                    else {
-                    
-                    }	
-                    ?>
             </div>
             <div class="post comments">
-                <?php comments_template(''); ?>
 				<div class="OUTBRAIN" data-src="" data-widget-id="TF_1" data-ob-template="InsideTheHall"></div>
-				<script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script>
+				<script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script> 
             </div>
             <?php dynamic_sidebar('double ad'); ?>
         </div>
     </section>
-    <?php get_sidebar(); ?>
+    <?php get_sidebar('sovrn'); ?>
 </section>
 <?php get_footer(); ?>

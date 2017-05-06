@@ -56,7 +56,6 @@
                 <div id="nativobelow"></div>
                 <?php	
                     if (is_mobile() || is_tablet() ) {
-                    	dynamic_sidebar('roster'); 
                     	dynamic_sidebar('latest');
                     }
                     else {
