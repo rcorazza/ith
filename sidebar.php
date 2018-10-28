@@ -20,11 +20,8 @@
             dynamic_sidebar('latest');
             }	
             ?>	
-        <div id="div-gpt-ad-insidethehall-300600"></div>
-        <div id="adsense">
-            <a href="http://www.foxsports.com" target="_blank"><img style="max-width: 100%;" src="http://www.insidethehall.com/wp-content/uploads/2015/07/badge_300.png"></a>
-        </div>
-        <div id="div-gpt-ad-insidethehall-300250"></div>
+        <div id="side-one"></div>
+        <div id="side-two"></div>
         <div id="OnScroll - 388843 - 300x600(S)"></div>
     </div>
 </aside>

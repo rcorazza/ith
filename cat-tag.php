@@ -2,6 +2,7 @@
 <section class="single main archives contain-all">
    <section class="left-rail">
       <div class="inner">
+         <div id="mobile-leaderboard"></div>
          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
          <article class="post">
             <h2><?php the_title(); ?></h2>
@@ -22,6 +23,7 @@
             <div id="nativobelow"></div>
             <?php	
                if (is_mobile() || is_tablet() ) {
+                  echo "<div id='mobile-leaderboard-two'></div>";
                	dynamic_sidebar('forum teaser'); 
                	dynamic_sidebar('latest');
                }

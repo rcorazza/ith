@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 48 47" xmlns="http://www.w3.org/2000/svg">
+<title>stats</title>
+<desc>Created with Sketch.</desc>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(0 -1)">
+<g transform="translate(0 2)">
+<polygon points="0 0 48 1.8113 48 48 0 48" fill="#7D7D7D"/>
+<path d="m8 26.615v15.692" stroke="#F9F9F9" stroke-linecap="square"/>
+<path transform="translate(11.5 25.077) rotate(90) translate(-11.5 -25.077)" d="m11.5 21.385v7.3846" stroke="#F9F9F9" stroke-linecap="square"/>
+<path transform="translate(25.5 15.846) rotate(90) translate(-25.5 -15.846)" d="m25.5 12.154v7.3846" stroke="#F9F9F9" stroke-linecap="square"/>
+<path transform="translate(39.5 8.4615) rotate(90) translate(-39.5 -8.4615)" d="m39.5 4.7692v7.3846" stroke="#F9F9F9" stroke-linecap="square"/>
+<path d="m3 0.46154v41.038" stroke="#F9F9F9" stroke-linecap="square"/>
+<path d="m22 16.385v25.385" stroke="#F9F9F9" stroke-linecap="square"/>
+<path d="m29 16.385v25.385" stroke="#F9F9F9" stroke-linecap="square"/>
+<path d="m36 9v32.769" stroke="#F9F9F9" stroke-linecap="square"/>
+<path d="m43 9v32.769" stroke="#F9F9F9" stroke-linecap="square"/>
+<path d="m15 25.615v15.692" stroke="#F9F9F9" stroke-linecap="square"/>
+<path d="m2.5 42.692h43" stroke="#F9F9F9" stroke-linecap="square"/>
+</g>
+</g>
+</g>
+</svg>

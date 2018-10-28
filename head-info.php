@@ -5,49 +5,47 @@
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link href='http://fonts.googleapis.com/css?family=Vollkorn|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Vollkorn|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 <link href='/wp-content/themes/priller/assets/css/main.css' rel='stylesheet' type='text/css'>
 <link href='/wp-content/themes/priller/assets/css/new.css' rel='stylesheet' type='text/css'>
-
 <?php wp_head(); ?>
 <title>
    <?php // WordPress custom title script
       // is the current page a tag archive page?
-      	if (function_exists('is_tag') && is_tag()) { 
+        if (function_exists('is_tag') && is_tag()) { 
       
-      		// if so, display this custom title
-      		echo 'Tag Archive for &quot;'.$tag.'&quot; - '; 
+          // if so, display this custom title
+          echo 'Tag Archive for &quot;'.$tag.'&quot; - '; 
       
-      	// or, is the page an archive page?
-      	} elseif (is_archive()) { 
+        // or, is the page an archive page?
+        } elseif (is_archive()) { 
       
-      		// if so, display this custom title
-      		wp_title(''); echo ' Archive - '; 
+          // if so, display this custom title
+          wp_title(''); echo ' Archive - '; 
       
-      	// or, is the page a search page?
-      	} elseif (is_search()) { 
+        // or, is the page a search page?
+        } elseif (is_search()) { 
       
-      		// if so, display this custom title
-      		echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; 
+          // if so, display this custom title
+          echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; 
       
-      	// or, is the page a single post or a literal page?
-      	} elseif (!(is_404()) && (is_single()) || (is_page())) { 
+        // or, is the page a single post or a literal page?
+        } elseif (!(is_404()) && (is_single()) || (is_page())) { 
       
-      		// if so, display this custom title
-      		wp_title(''); echo ' - '; 
+          // if so, display this custom title
+          wp_title(''); echo ' - '; 
       
-      	// or, is the page an error page?
-      	} elseif (is_404()) {
+        // or, is the page an error page?
+        } elseif (is_404()) {
       
-      		// yep, you guessed it
-      		echo 'Not Found - '; 
+          // yep, you guessed it
+          echo 'Not Found - '; 
       
-      	}
-      	// finally, display the blog name for all page types
-      	bloginfo('name'); 
+        }
+        // finally, display the blog name for all page types
+        bloginfo('name'); 
       
-      	?>
+        ?>
 </title>
 <!-- Google Analytics -->
 <script>
@@ -71,6 +69,6 @@
     scpt.parentNode.insertBefore(elem, scpt);  
    })();
 </script>
-<!-- script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script -->
+<script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script>
 
 

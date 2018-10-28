@@ -70,14 +70,7 @@
             ?>
     </p>
     <?php } ?>
-    <div style="margin-top: -9px; width: 100%; border-bottom: 1px solid #cccccc; overflow: auto;" id="new-native">
-    	<ul>
-    		<li style="margin-bottom: 0px; width: 30%; float: left;"><img style="width: 100px !important;" src="http://ith.ryc.me/wp-content/uploads/2016/09/gas.jpg"></li>
-    		<li style="margin-bottom: 0px;float: right;text-align: left;width: 65%;font-size: 14px;line-height: 18px;padding-top: 0px;"><a href="/">Drivers with no tickets in two years must read this</a></li>
-    		<li style="font-weight: bold; width: 100%;float: left;text-align: center;clear: both;font-size: 12px;margin-top: 0px;margin-bottom: 10px;">Sponsored by <a href="/">Inspired Insurance Savings</a></li>
-
-    	</ul>	
-    </div>
+ 
     <div style="clear: both;"></div>
     <?php the_content('Read <span style="font-size: 17px;">&#8594;</span>'); ?> 
 	<?php wp_link_pages(); ?>

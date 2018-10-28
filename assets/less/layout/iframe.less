@@ -6,7 +6,7 @@ iframe {
 	}
 	
 #header-ad iframe, #footer-ad iframe {height: 123px; width: 740px !important;}	
-#top-ad iframe, #bottom-ad iframe, #stream-one iframe, #stream-two iframe {height: 285px; width: 310px !important;}
+#top-ad iframe, #bottom-ad iframe, #stream-one iframe, #stream-two iframe, #side-one iframe, #side-two iframe {height: 285px; width: 310px !important;}
 #right-sidebar-ad iframe, #left-sidebar-ad iframe {height: 620px; float: left; width: 179px !important;}
 #right-sidebar-ad iframe {float: right;}
 #footer-ad {clear: both; float: right; margin-bottom: 20px;}
@@ -23,5 +23,14 @@ iframe {
 @media all and (max-width: 1024px) {
 
 #right-sidebar-ad iframe, #left-sidebar-ad iframe, #right-sidebar-ad, #left-sidebar-ad {float: none; display: inline-block;}
+
+}
+
+
+@media all and (max-width: 768px) {
+
+#side-one, #side-two {
+	display: none;
+}
 
 }

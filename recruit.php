@@ -14,6 +14,7 @@
         ?>  
     <section class="left-rail">
         <div class="inner">
+            <div id="mobile-leaderboard"></div>
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
             <article class="post">
@@ -23,15 +24,15 @@
                         <?php $stars = get_field('stars'); ?>
                         <?php
                             if ($stars == 1) {
-                            	echo "<span class='glyphicons star'></span>";
+                                echo "<span class='glyphicons star'></span>";
                             } elseif ($stars == 2) {
-                            	echo "<span class='glyphicons star'></span> <span class='glyphicons star'></span>";
+                                echo "<span class='glyphicons star'></span> <span class='glyphicons star'></span>";
                             } elseif ($stars == 3) {
-                            	echo "<span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span>";
+                                echo "<span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span>";
                             } elseif ($stars == 4) {
                                echo "<span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span>";
                             } elseif ($stars == 5) {
-                            	echo "<span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span>";
+                                echo "<span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span> <span class='glyphicons star'></span>";
                             } 
                             
                             ?>
@@ -52,16 +53,16 @@
                 <div class="entry player">
                     <?php
                         if ($offer == yes) {
-                        	echo " <p class='perma offer'>IU offer? <span style='margin-top: -30px !important;' class='glyphicons ok_2'></span></p>";
+                            echo " <p class='perma offer'>IU offer? <span style='margin-top: -30px !important;' class='glyphicons ok_2'></span></p>";
                         } elseif ($offer == no) {
-                        	echo "<p class='perma offer'>IU offer? No</p>";
+                            echo "<p class='perma offer'>IU offer? No</p>";
                         } 
                         
                         ?>
                     <p class="perma"><strong>Schools:</strong> <?php echo $schools; ?></p>
                     <p class="perma"><?php the_title(); ?> is a <?php echo $position; ?> for <?php echo $hs; ?> and <?php echo $aau_team; ?>. He is <?php echo $height; ?> and weighs <?php echo $weight; ?> pounds.</p>
                     <h2 class="player">News</h2>
-                    <?php					
+                    <?php                   
                         $the_tag = get_field('url_tag'); 
                         $postslist = get_posts('numberposts=5&orderby=date&tag='.$the_tag.'');
                         foreach ($postslist as $post) :
@@ -69,20 +70,20 @@
                          ?>
                     <p class="meta-links"><?php the_time('m/d/Y g:i a') ?></p>
                     <p class="perma"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
-                    <?php endforeach; ?>	
+                    <?php endforeach; ?>    
                     <?php wp_reset_query(); ?>
-                    <p class="perma"><a href="http://www.insidethehall.com/tag/<?php the_field('url_tag');?>">more <?php the_title(); ?> news <span style="font-size: 17px;">&#8594;</span></a></p>
+                    <p class="perma"><a href="//www.insidethehall.com/tag/<?php the_field('url_tag');?>">more <?php the_title(); ?> news <span style="font-size: 17px;">&#8594;</span></a></p>
                     <div style="clear: both;"></div>
                     <?php
                         if ($video == yes) {
-                        	echo "<h2 class='player'>Video</h2>";
+                            echo "<h2 class='player'>Video</h2>";
                         } else {
-                        	
+                            
                         } 
                         
                         ?>
                     <div style="clear: both;"></div>
-                    <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>	
+                    <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>    
                     <div style="clear: both;"></div>
                 </div>
             </article>
@@ -90,20 +91,21 @@
             <?php endif; ?>
             <div class="bottom">
                 <div id="nativobelow"></div>
-                <?php	
+                <?php   
                     if (is_mobile() || is_tablet() ) {
-                    	dynamic_sidebar('recruit'); 
-                    	dynamic_sidebar('latest');
+                        echo "<div id='mobile-leaderboard-two'></div>";
+                        dynamic_sidebar('recruit'); 
+                        dynamic_sidebar('latest');
                     }
                     else {
                     
-                    }	
+                    }   
                     ?>
             </div>
             <div class="post comments">
                 <?php comments_template(''); ?>
-				<div class="OUTBRAIN" data-src="" data-widget-id="TF_1" data-ob-template="InsideTheHall"></div>
-				<script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script>
+                <div class="OUTBRAIN" data-src="" data-widget-id="TF_1" data-ob-template="InsideTheHall"></div>
+                <script type="text/javascript" async="async" src="https://widgets.outbrain.com/outbrain.js"></script>
             </div>
             <?php dynamic_sidebar('double ad'); ?>
         </div>

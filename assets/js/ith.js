@@ -17,20 +17,7 @@ $(document).ready(function(){
 	    else {
 	    $('.header-ad').attr('style', 'display: none !important'); 	
 	    }
-	
 
-	if ($(window).width() < 576) {
-	    $('<div id="nativomiddle"></div>').insertAfter('.single p.featured');
-	}
-
-	if ($(window).width() >= 728) {
-	$("<script type='text/javascript'>\nvar googletag = googletag || {};\ngoogletag.cmd = googletag.cmd || [];\n(function() {\nvar gads = document.createElement('script');\ngads.async = true;\ngads.type = 'text/javascript';\nvar useSSL = 'https:' == document.location.protocol;\ngads.src = (useSSL ? 'https:' : 'http:') + \n'//www.googletagservices.com/tag/js/gpt.js';\nvar node = document.getElementsByTagName('script')[0];\nnode.parentNode.insertBefore(gads, node);\n})();\n</script>").appendTo('#div-gpt-ad-insidethehall-72890');
-	$("<script type='text/javascript'>\n    googletag.cmd.push(function() {\n      googletag.defineSlot('/8484/yb/insidethehall', [728, 90],'div-gpt-ad-insidethehall-72890')\n        .addService(googletag.pubads());\n      googletag.enableServices();\n      googletag.display('div-gpt-ad-insidethehall-72890');\n  });\n  </script>\n").appendTo('#div-gpt-ad-insidethehall-72890');	
-	}
-
-	else {
-
-	}
 
 	
 if ($(window).width() > 1024) {

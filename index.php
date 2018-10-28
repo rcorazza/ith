@@ -8,56 +8,58 @@
 <section class="contain-all main">
     <section class="left-rail">
         <div class="inner">
-        	<?php if(is_mobile()) {
-                  dynamic_sidebar('underground');
-                  }
+            <div id="mobile-leaderboard">
+            </div>
+            <?php //if(is_mobile()) {
+                  //dynamic_sidebar('underground');
+                  //}
             ?>
             <?php define('PAGE_NUMBER', get_query_var('paged')); ?>
             <?php if (is_home() && PAGE_NUMBER < 2) : ?>
             <?php dynamic_sidebar('top story'); ?>
             <?php endif; ?>
             <?php if (have_posts()) : ?>
-			<?php $count = 0; ?>
-			<?php while (have_posts()) : the_post(); ?>
-			<?php $count++; ?>
-            <?php if ($count == 2 || $count == 4 || $count == 6 ||  $count == 9 ||  $count == 10) {
-     		
-     		get_template_part('small-post');
- 			
- 			}
+            <?php $count = 0; ?>
+            <?php while (have_posts()) : the_post(); ?>
+            <?php $count++; ?>
+            <?php if ($count == 1)  {
+            
+            get_template_part( 'main-post' ); 
+            
+            }
+
+            else {
  
- 			else {
+             get_template_part('small-post');
+            
+            }
  
-		  get_template_part( 'main-post' ); 
- 			
- 			}
- 
- 			?>
+            ?>
                 <?php if( $wp_query->current_post == 0 ) { 
                 if( is_mobile()) { 
                 echo '<div id="nativoaboveHP"></div>';
-                dynamic_sidebar('top content'); 
+               // dynamic_sidebar('top content'); 
+                echo '<div id="mobile-leaderboard-two"></div>'; 
                 } 
-                else if ( !is_mobile() || !is_tablet() ) { 
+                if ( !is_mobile() || !is_tablet() ) { 
                 echo '<div id="nativoaboveHP"></div>';    
-                dynamic_sidebar('underground');
                 dynamic_sidebar('forum teaser'); 
                 }
                 else if (is_tablet()) { 
                 echo '<div id="nativoaboveHP"></div>';    
-                dynamic_sidebar('underground');
                 dynamic_sidebar('top content'); 
                 } 
                 } ?>          
             <?php if( $wp_query->current_post == 1) { 
-                if( is_mobile() || is_tablet() ) { 
-                dynamic_sidebar('forum teaser'); 
+                if( is_mobile() || is_tablet() ) {    
+               // dynamic_sidebar('forum teaser'); 
+               
                 } 
                 else { 
                 
                 } 
                 } ?>
-            <?php if( $wp_query->current_post == 2 ) { ?>
+            <?php if( $wp_query->current_post == 4 ) { ?>
             <?php dynamic_sidebar('double ad'); ?> 
             <?php } ?>       
            
@@ -74,11 +76,11 @@
             (function () {
             var s = document.createElement('script'); s.async = true;
             s.type = 'text/javascript';
-            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
             }());
         </script>
-        </div>	
+        </div>  
     </section>
     <?php get_sidebar(); ?>
 </section>

@@ -2,6 +2,7 @@
 <section class="contain-all main">
     <section class="left-rail">
         <div class="inner">
+            <div id="mobile-leaderboard"></div>
             <div class="post archive">
                 <h2><?php printf( __( 'Search Results for: %s' ), get_search_query() ); ?></h2>
             </div>
@@ -13,6 +14,7 @@
             <?php get_template_part('small-post'); ?>
                 <?php if( $wp_query->current_post == 0 ) { 
 				echo '<div id="nativoaboveHP"></div>';
+                echo "<div id='mobile-leaderboard-two'></div>";
                 } ?>
             <?php if( $wp_query->current_post == 2 ) { ?>
             <?php dynamic_sidebar('double ad'); ?> 

@@ -2,6 +2,7 @@
 <section class="contain-all main">
    <section class="left-rail">
       <div class="inner">
+         <div id="mobile-leaderboard"></div>
          <div class="post archive">
             <?php if ( is_category()) {  ?>
             <h2><?php single_cat_title(); ?> Archive</h2>
@@ -40,6 +41,7 @@
             <?php if( $wp_query->current_post == 1) { 
                 if( is_mobile() || is_tablet() ) { 
                 dynamic_sidebar('forum teaser'); 
+                echo "<div id='mobile-leaderboard-two'></div>";
                 } 
                 else { 
                 
